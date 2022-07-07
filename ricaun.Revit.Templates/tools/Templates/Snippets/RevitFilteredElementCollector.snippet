@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Revit FilteredElementCollector</Title>
+            <Author>ricaun</Author>
+            <Description>Creates new FilteredElementCollector() statement</Description>
+            <Shortcut>rfec</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[
+var $VarName$ = new FilteredElementCollector($VarDocument$)
+    .OfClass(typeof($VarType$))
+    .OfType<$VarType$>();]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>VarDocument</ID>
+                    <Default>document</Default>
+                    <ToolTip>Document of the FilteredElementCollector</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>VarName</ID>
+                    <Default>elements</Default>
+                </Literal>
+                <Literal>
+                    <ID>VarType</ID>
+                    <Default>Element</Default>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Autodesk.Revit.DB</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>System.Linq</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>System.Collections.Generic</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

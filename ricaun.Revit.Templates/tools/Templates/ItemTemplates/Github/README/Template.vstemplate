@@ -1,0 +1,14 @@
+﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>README.md</DefaultName>
+    <Name>README</Name>
+    <Description>README</Description>
+    <ProjectType>General</ProjectType>
+    <SortOrder>1</SortOrder>
+    <Icon>TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="README.md" ReplaceParameters="true">README.md</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

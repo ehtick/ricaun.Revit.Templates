@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Revit TransactionGroup</Title>
+            <Author>ricaun</Author>
+            <Description>Creates new TransactionGroup() statement</Description>
+            <Shortcut>rtg</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[using (TransactionGroup transactionGroup = new TransactionGroup($VarDocument$))
+{
+transactionGroup.Start("$VarName$");
+
+transactionGroup.Assimilate();
+}]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>VarDocument</ID>
+                    <Default>document</Default>
+                    <ToolTip>Document of the TransactionGroup</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>VarName</ID>
+                    <Default>TransactionName</Default>
+                    <ToolTip>Name of the TransactionGroup</ToolTip>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Autodesk.Revit.DB</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

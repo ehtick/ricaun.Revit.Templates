@@ -1,0 +1,14 @@
+﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>UserName.md</DefaultName>
+    <Name>MIT License</Name>
+    <Description>MIT License - 2022</Description>
+    <ProjectType>General</ProjectType>
+    <SortOrder>3</SortOrder>
+    <Icon>TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="LICENSE" ReplaceParameters="true">LICENSE.md</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

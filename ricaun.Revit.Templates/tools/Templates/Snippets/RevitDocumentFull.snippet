@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Revit Document</Title>
+            <Author>ricaun</Author>
+            <Description>Creates new Document statement</Description>
+            <Shortcut>rdocfull</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[
+UIDocument $VarUIDocument$ = $VarUIApplication$.ActiveUIDocument;
+Document $VarDocument$ = $VarUIDocument$.Document;
+View $VarView$ = $VarUIDocument$.ActiveView;
+Selection $VarSelection$ = $VarUIDocument$.Selection;]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>VarDocument</ID>
+                    <Default>document</Default>
+                    <ToolTip>Document</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>VarUIApplication</ID>
+                    <Default>uiapp</Default>
+                    <ToolTip>UIApplication</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>VarUIDocument</ID>
+                    <Default>uidoc</Default>
+                    <ToolTip>UIDocument</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>VarView</ID>
+                    <Default>view</Default>
+                    <ToolTip>View</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>VarSelection</ID>
+                    <Default>selection</Default>
+                    <ToolTip>Selection</ToolTip>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Autodesk.Revit.DB</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>Autodesk.Revit.UI</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>Autodesk.Revit.UI.Selection</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Revit GetElement</Title>
+            <Author>ricaun</Author>
+            <Description>Selection GetElement</Description>
+            <Shortcut>relement</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[var $VarName$ = $VarDocument$.GetElement($VarId$);]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>VarDocument</ID>
+                    <Default>document</Default>
+                    <ToolTip>Document</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>VarName</ID>
+                    <Default>element</Default>
+                </Literal>
+                <Literal>
+                    <ID>VarId</ID>
+                    <Default>id</Default>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Autodesk.Revit.DB</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>Autodesk.Revit.UI</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

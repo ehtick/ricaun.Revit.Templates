@@ -1,0 +1,23 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+    <TemplateData>
+        <Name>Revit Addin Template - Full</Name>
+        <Description>Class library template for a Revit 2023-2020 C# .NET add-in project</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <LanguageTag>C#</LanguageTag>
+        <PlatformTag>Revit</PlatformTag>
+        <ProjectTypeTag>Revit App</ProjectTypeTag>
+        <SortOrder>1000</SortOrder>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>RevitAddin</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    </TemplateData>
+    <TemplateContent>
+        <Project ReplaceParameters="true" File="Revit.Addin.Template.csproj">
+            <ProjectItem ReplaceParameters="true">Revit\App.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Revit\Commands\Command.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>

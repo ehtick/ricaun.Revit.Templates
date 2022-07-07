@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Revit Method Select Element</Title>
+            <Author>ricaun</Author>
+            <Description>Creates new Select Element Method</Description>
+            <Shortcut>rmselectelement</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[public IEnumerable<$VarType$> $MethodName$(Document document)
+{
+    var $VarName$ = new FilteredElementCollector(document)
+        .WhereElementIsNotElementType()
+        .OfClass(typeof($VarType$))
+        .OfType<$VarType$>();
+    return $VarName$;
+}]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>MethodName</ID>
+                    <Default>Select</Default>
+                </Literal>
+                <Literal>
+                    <ID>VarName</ID>
+                    <Default>elements</Default>
+                </Literal>
+                <Literal>
+                    <ID>VarType</ID>
+                    <Default>Element</Default>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Autodesk.Revit.DB</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>System.Linq</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>System.Collections.Generic</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

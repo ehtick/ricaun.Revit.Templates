@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>ricaun App</Title>
+            <Author>ricaun</Author>
+            <Description>Add Application</Description>
+            <Shortcut>rapp</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+      <![CDATA[
+[Console]
+public class $VarApp$ : IExternalApplication
+{
+    private static RibbonPanel ribbonPanel;
+    public Result OnStartup(UIControlledApplication application)
+    {
+        ribbonPanel = application.CreatePanel("$VarName$");
+        ribbonPanel.AddPushButton<Commands.Command>()
+            .SetLargeImage("/UIFrameworkRes;component/ribbon/images/revit.ico");
+        return Result.Succeeded;
+    }
+
+    public Result OnShutdown(UIControlledApplication application)
+    {
+        ribbonPanel?.Remove();
+        return Result.Succeeded;
+    }
+}
+            ]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>VarApp</ID>
+                    <Default>App</Default>
+                    <ToolTip>Application App Name</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>VarName</ID>
+                    <Default>PanelName</Default>
+                    <ToolTip>Name of the Panel</ToolTip>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Autodesk.Revit.UI</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>Autodesk.Revit.DB</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>ricaun.Revit.UI</Namespace>
+                </Import>
+            </Imports>
+            <References>
+                <Reference>ricaun.Revit.UI</Reference>
+            </References>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

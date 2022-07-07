@@ -1,0 +1,14 @@
+﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Service.cs</DefaultName>
+    <Name>Service</Name>
+    <Description>Basic Service Class</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>11</SortOrder>
+    <Icon>TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Service.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

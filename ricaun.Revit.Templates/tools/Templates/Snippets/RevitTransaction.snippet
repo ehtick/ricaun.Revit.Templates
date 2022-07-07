@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Revit Transaction</Title>
+            <Author>ricaun</Author>
+            <Description>Creates new Transaction() statement</Description>
+            <Shortcut>rt</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[using (Transaction transaction = new Transaction($VarDocument$))
+{
+transaction.Start("$VarName$");
+
+transaction.Commit();
+}]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>VarDocument</ID>
+                    <Default>document</Default>
+                    <ToolTip>Document of the Transaction</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>VarName</ID>
+                    <Default>TransactionName</Default>
+                    <ToolTip>Name of the Transaction</ToolTip>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Autodesk.Revit.DB</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

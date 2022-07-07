@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>ricaun Command</Title>
+            <Author>ricaun</Author>
+            <Description>Add Command</Description>
+            <Shortcut>rcommand</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[
+[Transaction(TransactionMode.Manual)]
+public class $VarCommand$ : IExternalCommand
+{
+    public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elementSet)
+    {
+        UIApplication uiapp = commandData.Application;
+        
+        return Result.Succeeded;
+    }
+}
+            ]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>VarCommand</ID>
+                    <Default>Command</Default>
+                    <ToolTip>Command Name</ToolTip>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Autodesk.Revit.Attributes</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>Autodesk.Revit.DB</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>Autodesk.Revit.UI</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

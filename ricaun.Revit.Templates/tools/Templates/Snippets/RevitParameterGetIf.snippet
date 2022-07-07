@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Revit Parameter Get If</Title>
+            <Author>ricaun</Author>
+            <Description>Creates Get Parameter</Description>
+            <Shortcut>rparameterif</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp"><![CDATA[
+if ($VarElement$.get_Parameter(BuiltInParameter.$BuiltInParameter$) is Parameter $VarParameter$)
+{
+    $VarParameter$.Set($VarValue$);
+}]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>VarParameter</ID>
+                    <Default>parameter</Default>
+                </Literal>
+                <Literal>
+                    <ID>BuiltInParameter</ID>
+                    <Default>ALL_MODEL_INSTANCE_COMMENTS</Default>
+                </Literal>
+                <Literal>
+                    <ID>VarElement</ID>
+                    <Default>element</Default>
+                </Literal>
+                <Literal>
+                    <ID>VarValue</ID>
+                    <Default>"Comments"</Default>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Autodesk.Revit.DB</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>Autodesk.Revit.UI</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

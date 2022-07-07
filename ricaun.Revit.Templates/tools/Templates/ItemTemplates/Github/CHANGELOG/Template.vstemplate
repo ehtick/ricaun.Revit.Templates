@@ -1,0 +1,14 @@
+﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>CHANGELOG.md</DefaultName>
+    <Name>CHANGELOG</Name>
+    <Description>CHANGELOG</Description>
+    <ProjectType>General</ProjectType>
+    <SortOrder>2</SortOrder>
+    <Icon>TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="CHANGELOG.md" ReplaceParameters="true">CHANGELOG.md</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
