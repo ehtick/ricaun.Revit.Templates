@@ -5,6 +5,12 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Publish](../../actions/workflows/Publish.yml/badge.svg)](../../actions)
 [![Develop](../../actions/workflows/Develop.yml/badge.svg)](../../actions)
+[![Release](https://img.shields.io/nuget/v/ricaun.Revit.Templates?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.Revit.Templates)
+
+## Installation
+
+* Install [.Net SDK](https://dotnet.microsoft.com/download)
+* Run `dotnet new -i ricaun.Revit.Templates` 
 
 ## Release
 
