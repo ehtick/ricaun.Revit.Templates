@@ -114,29 +114,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.17\SolutionTemplates\Properties\Resources.resx" />
-    <EmbeddedResource Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.20\SolutionTemplates\Properties\Resources.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.17\Build\.editorconfig" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.17\Build\build.cmd" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.17\Build\build.ps1" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.17\Build\build.sh" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.17\CHANGELOG.md" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.17\LICENSE" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.17\nuke.cmd" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.17\README.md" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.17\SolutionTemplates\Resources\Revit.ico" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.20\Build\.editorconfig" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.20\Build\build.cmd" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.20\Build\build.ps1" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.20\Build\build.sh" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.20\CHANGELOG.md" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.20\LICENSE" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.20\nuke.cmd" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.20\README.md" />
-    <None Remove="content\SolutionTemplates\ricaun.Solution.Revit.Addin.Template.23.20\SolutionTemplates\Resources\Revit.ico" />
+   
   </ItemGroup>
 
   <ItemGroup>
