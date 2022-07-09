@@ -45,7 +45,7 @@
   <PropertyGroup>
     <Company>ricaun</Company>
     <Authors>Luiz Henrique Cassettari</Authors>
-    <Description>ItemTemplates $(PackageId).</Description>
+    <Description>RevitAddin Templates and ItemTemplates for C# Applications.</Description>
     <CopyrightYears>$([System.DateTime]::Now.ToString('yyyy'))</CopyrightYears>
   </PropertyGroup>
 
