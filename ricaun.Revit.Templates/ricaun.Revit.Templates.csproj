@@ -118,9 +118,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="tools\**\*">
+    <Content Update="tools\**\*">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
     <None Update="dotnet-create-sln.cmd">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
