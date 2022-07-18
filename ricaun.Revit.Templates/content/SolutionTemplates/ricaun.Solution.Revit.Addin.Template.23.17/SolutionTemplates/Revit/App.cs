@@ -12,7 +12,7 @@ namespace SolutionTemplates.Revit
         public Result OnStartup(UIControlledApplication application)
         {
             ribbonPanel = application.CreatePanel("SolutionTemplates");
-            ribbonPanel.AddPushButton<Commands.Command>()
+            ribbonPanel.CreatePushButton<Commands.Command>()
                 .SetLargeImage(Properties.Resources.Revit.GetBitmapSource());
             return Result.Succeeded;
         }

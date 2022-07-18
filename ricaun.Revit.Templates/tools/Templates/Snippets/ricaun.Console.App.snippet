@@ -17,7 +17,7 @@ public class $VarApp$ : IExternalApplication
     public Result OnStartup(UIControlledApplication application)
     {
         ribbonPanel = application.CreatePanel("$VarName$");
-        ribbonPanel.AddPushButton<Commands.Command>()
+        ribbonPanel.CreatePushButton<Commands.Command>()
             .SetLargeImage("/UIFrameworkRes;component/ribbon/images/revit.ico");
         return Result.Succeeded;
     }
