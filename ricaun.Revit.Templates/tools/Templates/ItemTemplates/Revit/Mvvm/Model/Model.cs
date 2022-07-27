@@ -2,7 +2,7 @@
 
 namespace $rootnamespace$
 {
-    public class $safeitemname$ : NotifyPropertyBase
+    public class $safeitemname$
     {
         
     }

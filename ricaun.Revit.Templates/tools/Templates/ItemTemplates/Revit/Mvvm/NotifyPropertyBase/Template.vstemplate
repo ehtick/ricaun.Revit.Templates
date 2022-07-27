@@ -4,7 +4,7 @@
     <Name>NotifyPropertyBase</Name>
     <Description>Notify Property Base Code</Description>
     <ProjectType>CSharp</ProjectType>
-    <SortOrder>30</SortOrder>
+    <SortOrder>100</SortOrder>
     <Icon>TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>

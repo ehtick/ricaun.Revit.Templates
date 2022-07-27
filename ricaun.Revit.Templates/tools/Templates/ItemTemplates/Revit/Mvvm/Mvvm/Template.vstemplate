@@ -1,0 +1,17 @@
+﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Mvvm.cs</DefaultName>
+    <Name>Mvvm</Name>
+    <Description>ricaun.Revit.Mvvm base files</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="Designer" TargetFileName="Views\$fileinputname$View.xaml" ReplaceParameters="true">View.xaml</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="Views\$fileinputname$View.xaml.cs" ReplaceParameters="true">View.xaml.cs</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="ViewModels\$fileinputname$ViewModel.cs" ReplaceParameters="true">ViewModel.cs</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="Models\$fileinputname$Model.cs" ReplaceParameters="true">Model.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

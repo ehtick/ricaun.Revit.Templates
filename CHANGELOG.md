@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [0.3.0] / 2022-07-26
+### Features
+- Add Mvvm ItemTemplates
+- Add ricaun.Revit.Mvvm Reference
 ### Updated
 - Set `csproj` `IncludePackageReferencesDuringMarkupCompilation` to `false`
 
