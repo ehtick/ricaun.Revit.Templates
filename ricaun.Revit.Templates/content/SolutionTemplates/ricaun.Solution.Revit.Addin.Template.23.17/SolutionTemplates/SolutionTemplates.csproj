@@ -97,7 +97,8 @@
     <PackageAssemblyVersion></PackageAssemblyVersion>
   </PropertyGroup>
   <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
-    <Revision>$([MSBuild]::Divide($([System.DateTime]::get_Now().get_TimeOfDay().get_TotalSeconds()), 4).ToString('F0'))</Revision>
+    <IncludePackageReferencesDuringMarkupCompilation>false</IncludePackageReferencesDuringMarkupCompilation>
+    <Revision>$([MSBuild]::Divide($([System.DateTime]::Now.TimeOfDay.TotalSeconds), 4).ToString('F0'))</Revision>
     <PackageAssemblyVersion>.Dev.$(Version).$(Revision)</PackageAssemblyVersion>
   </PropertyGroup>
 
@@ -116,6 +117,7 @@
 
   <ItemGroup>
     <PackageReference Include="ricaun.Revit.UI" Version="*"/>
+    <PackageReference Include="ricaun.Revit.Mvvm" Version="*"/>
   </ItemGroup>
 
   <ItemGroup>
@@ -129,7 +131,7 @@
 
   <!-- Fody -->
   <ItemGroup>
-    <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" IncludeAssets="compile; build" PrivateAssets="all" />
+    <PackageReference Include="PropertyChanged.Fody" Version="3.*" PrivateAssets="all" />
   </ItemGroup>
   <PropertyGroup>
     <WeaverConfiguration>

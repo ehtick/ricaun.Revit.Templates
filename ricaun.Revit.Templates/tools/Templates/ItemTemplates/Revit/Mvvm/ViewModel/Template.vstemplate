@@ -1,14 +1,14 @@
 ﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
-    <DefaultName>Model.cs</DefaultName>
-    <Name>Model</Name>
-    <Description>Model Base Code</Description>
+    <DefaultName>ViewModel.cs</DefaultName>
+    <Name>ViewModel</Name>
+    <Description>ViewModel Base Code</Description>
     <ProjectType>CSharp</ProjectType>
-    <SortOrder>31</SortOrder>
+    <SortOrder>40</SortOrder>
     <Icon>TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <References />
-    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Model.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">ViewModel.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>

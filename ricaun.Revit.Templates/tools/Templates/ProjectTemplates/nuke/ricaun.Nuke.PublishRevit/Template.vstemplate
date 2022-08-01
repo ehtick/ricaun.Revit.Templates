@@ -27,6 +27,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="build.sh">build.sh</ProjectItem>
 
       <ProjectItem ReplaceParameters="true" TargetFileName="Build.cs">Build.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="README.md">README.md</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

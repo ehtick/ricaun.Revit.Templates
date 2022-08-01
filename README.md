@@ -11,7 +11,9 @@ RevitAddin Templates and ItemTemplates for C# Applications.
 
 ## Installation
 
-* Install [.Net SDK](https://dotnet.microsoft.com/download)
+This package is automatically installed when using the [ricaun.Console](https://ricaun.com/console/) plugin.
+
+* Install [.Net SDK](https://dotnet.microsoft.com/download) or [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 * Run `dotnet new -i ricaun.Revit.Templates` 
 
 ## Release

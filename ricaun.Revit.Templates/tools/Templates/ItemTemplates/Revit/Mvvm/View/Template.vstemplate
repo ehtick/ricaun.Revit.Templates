@@ -4,7 +4,7 @@
     <Name>View</Name>
     <Description>A Revit oriented WPF View</Description>
     <ProjectType>CSharp</ProjectType>
-    <SortOrder>20</SortOrder>
+    <SortOrder>30</SortOrder>
     <Icon>TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
