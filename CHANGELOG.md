@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add Mvvm ItemTemplates
 - Add ricaun.Revit.Mvvm Reference
 ### Updated
+- Update `ProjectTemplates` and `SolutionTemplates`
 - Set `csproj` `IncludePackageReferencesDuringMarkupCompilation` to `false`
 
 ## [0.2.0] / 2022-07-09

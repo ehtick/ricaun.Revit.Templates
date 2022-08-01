@@ -116,6 +116,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ricaun.Revit.UI" Version="*"/>
+    <PackageReference Include="ricaun.Revit.Mvvm" Version="*"/>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Revit\Commands" />
   </ItemGroup>
 
@@ -126,7 +131,7 @@
 
   <!-- Fody -->
   <ItemGroup>
-    <PackageReference Include="PropertyChanged.Fody" Version="3.*" IncludeAssets="compile; build" PrivateAssets="all" />
+    <PackageReference Include="PropertyChanged.Fody" Version="3.*" PrivateAssets="all" />
   </ItemGroup>
   <PropertyGroup>
     <WeaverConfiguration >
@@ -137,6 +142,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="*" IncludeAssets="build; compile" PrivateAssets="All" />
     <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="$(RevitVersion).*" IncludeAssets="build; compile" PrivateAssets="All" />
   </ItemGroup>
 

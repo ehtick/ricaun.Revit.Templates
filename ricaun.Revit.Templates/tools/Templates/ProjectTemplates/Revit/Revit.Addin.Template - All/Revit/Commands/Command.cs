@@ -12,6 +12,8 @@ namespace $safeprojectname$.Revit.Commands
     {
       UIApplication uiapp = commandData.Application;
       
+      System.Windows.MessageBox.Show(uiapp.Application.VersionName);
+
       return Result.Succeeded;
     }
   }

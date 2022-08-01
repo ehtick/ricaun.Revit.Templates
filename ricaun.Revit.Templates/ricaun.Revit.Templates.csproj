@@ -112,22 +112,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="tools\Templates\ItemTemplates\Revit\Mvvm\ViewModel\Template.vstemplate" />
-    <None Remove="tools\Templates\ItemTemplates\Revit\Mvvm\ViewModel\TemplateIcon.ico" />
-    <None Remove="tools\Templates\ItemTemplates\Revit\Mvvm\Mvvm\Template.vstemplate" />
-    <None Remove="tools\Templates\ItemTemplates\Revit\Mvvm\Mvvm\TemplateIcon.ico" />
-  </ItemGroup>
 
-  <ItemGroup>
-    <Page Remove="tools\Templates\ItemTemplates\Revit\Mvvm\Mvvm\View.xaml" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Update="tools\**\*">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Update="tools\Templates\ItemTemplates\Revit\Mvvm\Mvvm\View.xaml">
-      <Generator>MSBuild:Compile</Generator>
     </Content>
     <None Update="dotnet-create-sln.cmd">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
