@@ -1,6 +1,7 @@
 ﻿using $rootnamespace$.Views;
 using $rootnamespace$.Models;
 using ricaun.Revit.Mvvm;
+using ricaun.Revit.UI;
 using System;
 using System.Windows;
 
@@ -29,6 +30,7 @@ namespace $rootnamespace$.ViewModels
             {
                 Window = new $fileinputname$View();
                 Window.DataContext = this;
+                Window.SetAutodeskOwner();
                 Window.Closed += (s, e) => { Window = null; };
             }
             Window?.Show();

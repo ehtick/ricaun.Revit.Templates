@@ -5,7 +5,7 @@ using System;
 
 namespace $rootnamespace$
 {
-    [Console]
+    [ApplicationLoader]
 public class $safeitemname$ : IExternalApplication
     {
         private static RibbonPanel ribbonPanel;
