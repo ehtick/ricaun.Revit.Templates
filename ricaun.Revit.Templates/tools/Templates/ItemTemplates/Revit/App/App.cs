@@ -5,7 +5,7 @@ using System;
 
 namespace $rootnamespace$
 {
-    [ApplicationLoader]
+    [AppLoader]
 public class $safeitemname$ : IExternalApplication
     {
         private static RibbonPanel ribbonPanel;

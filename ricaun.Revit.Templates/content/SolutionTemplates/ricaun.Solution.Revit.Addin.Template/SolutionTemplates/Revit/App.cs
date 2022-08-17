@@ -5,7 +5,7 @@ using System;
 
 namespace SolutionTemplates.Revit
 {
-    [ApplicationLoader]
+    [AppLoader]
     public class App : IExternalApplication
     {
         private static RibbonPanel ribbonPanel;
