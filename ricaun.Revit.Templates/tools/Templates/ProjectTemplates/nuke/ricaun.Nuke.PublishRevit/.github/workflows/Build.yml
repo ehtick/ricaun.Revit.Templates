@@ -1,31 +1,27 @@
 # ------------------------------------------------------------------------------
-# Publish.yml
+# Build.yml
 # ------------------------------------------------------------------------------
 
-name: Publish
+name: Build
 
 on:
   push:
-    branches:
+  pull_request:
+    branches-ignore:
       - master
+      - main
   workflow_dispatch:
 
 jobs:
-  Publish:
-    name: Publish
+  Build:
+    name: Build
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Cache .nuke/temp, ~/.nuget/packages
-        uses: actions/cache@v2
-        with:
-          path: |
-            .nuke/temp
-            ~/.nuget/packages
-          key: ${{ runner.os }}-${{ hashFiles('**/global.json', '**/*.csproj') }}
       - name: Run './build/build.cmd'
         run: ./build/build.cmd --root ./build
         env:
           GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           SignFile: ${{ secrets.SIGN_FILE }}
           SignPassword: ${{ secrets.SIGN_PASSWORD }}
+          InstallationFiles: ${{ secrets.INSTALLATION_FILES }}

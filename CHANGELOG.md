@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.4.0] / 2022-08-16 - 2022-08-09
 ### Features
+- Update/Remove ItemTemplates
 - Update Base Template - Multiple Version
 - Add NoRevitVersion
 - Update `ricaun.Revit.UI` version `0.3.*`

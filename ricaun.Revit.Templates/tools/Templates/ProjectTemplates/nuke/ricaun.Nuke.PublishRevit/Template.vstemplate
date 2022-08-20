@@ -17,8 +17,7 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="build.csproj" File="build.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true">.github\workflows\Develop.yml</ProjectItem>
-      <ProjectItem ReplaceParameters="true">.github\workflows\Publish.yml</ProjectItem>
+      <ProjectItem ReplaceParameters="true">.github\workflows\Build.yml</ProjectItem>
       <ProjectItem ReplaceParameters="true">.nuke\parameters.json</ProjectItem>
 
       <ProjectItem ReplaceParameters="false" TargetFileName=".editorconfig">.editorconfig</ProjectItem>

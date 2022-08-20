@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace $rootnamespace$
 {
@@ -13,21 +14,9 @@ namespace $rootnamespace$
         /// Refresh a single property to UI
         /// </summary>
         /// <param name="propertyName"></param>
-        public void RefreshProperty(string propertyName)
+        public void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        /// <summary>
-        /// Refresh all properties to UI
-        /// </summary>
-        public void RefreshAllProperties()
-        {
-            System.Reflection.PropertyInfo[] properties = this.GetType().GetProperties();
-            foreach (var property in properties)
-            {
-                RefreshProperty(property.Name);
-            }
         }
     }
 }

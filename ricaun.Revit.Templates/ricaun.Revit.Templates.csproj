@@ -112,6 +112,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="tools\Templates\ProjectTemplates\nuke\ricaun.Nuke.PublishRevit\TemplateIcon.ico" />
+    <None Remove="tools\Templates\ProjectTemplates\Revit\Revit.Addin.Template\TemplateIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="tools\**\*">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
