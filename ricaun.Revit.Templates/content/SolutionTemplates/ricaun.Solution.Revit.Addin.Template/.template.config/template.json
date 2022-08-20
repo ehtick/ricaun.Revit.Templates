@@ -1,15 +1,15 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "ricaun",
-  "name": "ricaun - Solution Revit Addin Template",
+  "name": "Solution Revit Addin Template",
   "shortName": "ricaun-revit-addin-sln",
   "identity": "ricaun.Solution.Revit.Addin.Template",
   "defaultName": "RevitAddin",
   "sourceName": "SolutionTemplates",
-  "description": "ricaun Solution for Revit C# .NET add-in project with Build",
+  "description": "Solution for Revit C# .NET add-in project with Build",
   "classifications": [ "ricaun", "Revit", "Solution" ],
   "tags": {
-    "platform": ".NET",
+    "platform": "Windows",
     "language": "C#",
     "type": "solution"
   },

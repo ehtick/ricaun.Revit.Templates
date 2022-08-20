@@ -1,11 +1,13 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>Revit Publish Nuke</Name>
-    <Description>Revit Publish Nuke</Description>
+    <Name>Revit Build Publish Nuke (ricaun)</Name>
+    <Description>Project with ricaun.Nuke for Revit Publish Build</Description>
+    <Icon>TemplateIcon.png</Icon>
     <ProjectType>CSharp</ProjectType>
-    <ProjectSubType></ProjectSubType>
-    <PlatformTag>nuke</PlatformTag>
+    <LanguageTag>C#</LanguageTag>
+    <PlatformTag>Windows</PlatformTag>
     <ProjectTypeTag>Revit</ProjectTypeTag>
+    <ProjectTypeTag>nuke</ProjectTypeTag>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>Build</DefaultName>
@@ -13,7 +15,6 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <CreateInPlace>true</CreateInPlace>
-    <Icon>TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="build.csproj" File="build.csproj" ReplaceParameters="true">
