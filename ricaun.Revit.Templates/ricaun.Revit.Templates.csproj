@@ -112,8 +112,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="tools\Templates\ProjectTemplates\nuke\ricaun.Nuke.PublishRevit\TemplateIcon.png" />
-    <None Remove="tools\Templates\ProjectTemplates\Revit\Revit.Addin.Template\TemplateIcon.png" />
+  
   </ItemGroup>
 
   <ItemGroup>

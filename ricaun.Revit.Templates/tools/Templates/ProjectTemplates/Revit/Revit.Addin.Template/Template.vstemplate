@@ -2,9 +2,6 @@
   <TemplateData>
     <Name>Revit Addin Template (ricaun)</Name>
     <Description>Project library template for a Revit C# .NET add-in</Description>
-    <!--
-    <Icon>TemplateIcon.ico</Icon>
-    -->
     <Icon>TemplateIcon.png</Icon>
     <ProjectType>CSharp</ProjectType>
     <LanguageTag>C#</LanguageTag>
