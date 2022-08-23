@@ -6,8 +6,7 @@
 <!--#if (License)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 #endif-->
-[![Publish](../../actions/workflows/Publish.yml/badge.svg)](../../actions)
-[![Develop](../../actions/workflows/Develop.yml/badge.svg)](../../actions)
+[![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
 
 ## Release
 

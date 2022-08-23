@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>ricaun AppDB</Title>
+            <Author>ricaun</Author>
+            <Description>Add ApplicationDB</Description>
+            <Shortcut>rappdb</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+      <![CDATA[
+[AppLoader]
+public class $VarApp$ : IExternalDBApplication
+{
+    public ExternalDBApplicationResult OnStartup(ControlledApplication application)
+    {
+        return ExternalDBApplicationResult.Succeeded;
+    }
+
+    public ExternalDBApplicationResult OnShutdown(ControlledApplication application)
+    {
+        return ExternalDBApplicationResult.Succeeded;
+    }
+}
+            ]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>VarApp</ID>
+                    <Default>AppDB</Default>
+                    <ToolTip>DBApplication AppDB Name</ToolTip>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>Autodesk.Revit.ApplicationServices</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>Autodesk.Revit.DB</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>ricaun.Revit.UI</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
