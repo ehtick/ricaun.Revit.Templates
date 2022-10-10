@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.4.2] / 2022-10-10
+### Features
+- Update `SolutionTemplate` Readme Installation
+
 ## [0.4.1] / 2022-08-24 - 2022-10-05
 ### Features
 - Update `Revit.ico`
@@ -39,6 +43,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Solution `ricaun-revit-addin-23-17-sln`
 
 [vNext]: ../../compare/1.0.0...HEAD
+[0.4.2]: ../../compare/0.4.1...0.4.2
 [0.4.1]: ../../compare/0.4.0...0.4.1
 [0.4.0]: ../../compare/0.3.0...0.4.0
 [0.3.0]: ../../compare/0.2.0...0.3.0
