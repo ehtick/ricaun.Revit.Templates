@@ -8,9 +8,9 @@
 #endif-->
 [![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
 
-## Release
+## Installation
 
-* [Latest release](../../releases/latest)
+* Download and install [SolutionTemplates.exe](../../releases/latest/download/SolutionTemplates.zip)
 
 <!--#if (License)
 ## License
