@@ -2,13 +2,13 @@
   <TemplateData>
     <DefaultName>Command.cs</DefaultName>
     <Name>Command</Name>
-    <Description>Basic Revit External Command</Description>
+    <Description>Basic Revit Command with IExternalCommand</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
     <Icon>TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <References />
-    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Command1.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Command.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>

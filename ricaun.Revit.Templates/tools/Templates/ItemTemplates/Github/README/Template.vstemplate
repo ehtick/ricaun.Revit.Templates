@@ -2,7 +2,7 @@
   <TemplateData>
     <DefaultName>README.md</DefaultName>
     <Name>README</Name>
-    <Description>README</Description>
+    <Description>Create README.md template file</Description>
     <ProjectType>General</ProjectType>
     <SortOrder>1</SortOrder>
     <Icon>TemplateIcon.ico</Icon>

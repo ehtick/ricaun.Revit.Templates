@@ -131,7 +131,7 @@
 
   <!-- Fody -->
   <ItemGroup>
-    <PackageReference Include="PropertyChanged.Fody" Version="*" IncludeAssets="build; compile" PrivateAssets="All"/>
+    <PackageReference Include="PropertyChanged.Fody" Version="3.*" IncludeAssets="build; compile" PrivateAssets="All"/>
   </ItemGroup>
   <PropertyGroup>
     <WeaverConfiguration >
