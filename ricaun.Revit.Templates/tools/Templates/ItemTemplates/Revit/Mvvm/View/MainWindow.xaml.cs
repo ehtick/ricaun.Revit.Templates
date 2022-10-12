@@ -18,6 +18,7 @@ namespace $rootnamespace$
             this.ShowInTaskbar = false;
             this.ResizeMode = ResizeMode.NoResize;
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            new System.Windows.Interop.WindowInteropHelper(this) { Owner = Autodesk.Windows.ComponentManager.ApplicationWindow };
         }
 #endregion
     }
