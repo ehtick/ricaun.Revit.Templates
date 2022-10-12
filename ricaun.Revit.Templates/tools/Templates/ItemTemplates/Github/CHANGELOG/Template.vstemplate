@@ -2,7 +2,7 @@
   <TemplateData>
     <DefaultName>CHANGELOG.md</DefaultName>
     <Name>CHANGELOG</Name>
-    <Description>CHANGELOG</Description>
+    <Description>Create CHANGELOG.md template file</Description>
     <ProjectType>General</ProjectType>
     <SortOrder>2</SortOrder>
     <Icon>TemplateIcon.ico</Icon>

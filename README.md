@@ -39,9 +39,13 @@ Options | Description | Default
 ### ItemTemplates
 The `ItemTemplates` are installed automatically in `Visual Studio 2022` when [ricaun.AppLoader](https://ricaun.com/AppLoader/) plugin installs the package.
 
+#### Github
 Item | Description
 --------|-------------
-Todo | Todo
+CHANGELOG | Create CHANGELOG.md template file
+LICENCE | Create LICENSE.md template file with MIT License
+README | Create README.md template file
+
 
 ### ProjectTemplates
 The `ProjectTemplates` are installed automatically in `Visual Studio 2022` when [ricaun.AppLoader](https://ricaun.com/AppLoader/) plugin installs the package.
