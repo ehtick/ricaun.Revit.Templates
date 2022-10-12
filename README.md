@@ -46,6 +46,12 @@ CHANGELOG | Create CHANGELOG.md template file
 LICENCE | Create LICENSE.md template file with MIT License
 README | Create README.md template file
 
+#### Revit
+Item | Description
+--------|-------------
+App | Basic Revit Application with IExternalApplication
+Command | Basic Revit Command with IExternalCommand
+todo | ...
 
 ### ProjectTemplates
 The `ProjectTemplates` are installed automatically in `Visual Studio 2022` when [ricaun.AppLoader](https://ricaun.com/AppLoader/) plugin installs the package.
