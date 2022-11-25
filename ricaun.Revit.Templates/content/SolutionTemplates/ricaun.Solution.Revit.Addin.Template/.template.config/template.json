@@ -47,7 +47,7 @@
       "description": "Set Project Description PropertyGroup",
       "replaces": "DescriptionReplace",
       "datatype": "string",
-      "defaultValue": "Revit Plugin $(PackageId)"
+      "defaultValue": "Revit Plugin Description for $(PackageId)."
     },
     "Revit2023": {
       "type": "parameter",

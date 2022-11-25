@@ -130,7 +130,7 @@
   <PropertyGroup>
     <Company>CompanyReplace</Company>
     <Authors>AuthorsReplace</Authors>
-    <Description>Revit Add-In Description for $(PackageId).</Description>
+    <Description>DescriptionReplace</Description>
     <CopyrightYears>$([System.DateTime]::Now.ToString('yyyy'))</CopyrightYears>
   </PropertyGroup>
 
