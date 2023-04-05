@@ -55,6 +55,12 @@
         <TargetFramework>net48</TargetFramework>
       </PropertyGroup>
     </When>
+    <When Condition="$(Configuration.Contains('2024'))">
+      <PropertyGroup>
+        <RevitVersion>2024</RevitVersion>
+        <TargetFramework>net48</TargetFramework>
+      </PropertyGroup>
+    </When>
     <Otherwise>
       <PropertyGroup>
         <RevitVersion>2017</RevitVersion>

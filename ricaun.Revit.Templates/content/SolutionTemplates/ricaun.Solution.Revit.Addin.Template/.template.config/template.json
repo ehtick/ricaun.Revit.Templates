@@ -49,6 +49,12 @@
       "datatype": "string",
       "defaultValue": "Revit Plugin Description for $(PackageId)."
     },
+    "Revit2024": {
+      "type": "parameter",
+      "description": " Configuration Version Revit 2024",
+      "dataType": "bool",
+      "defaultValue": "false"
+    },
     "Revit2023": {
       "type": "parameter",
       "description": " Configuration Version Revit 2023",
@@ -93,7 +99,7 @@
     },
     "NoRevitVersion": {
       "type": "computed",
-      "value": "(Revit2023 == \"false\" & Revit2022 == \"false\" & Revit2021 == \"false\" & Revit2020 == \"false\" & Revit2019 == \"false\" & Revit2018 == \"false\" & Revit2017 == \"false\")"
+      "value": "(Revit2024 == \"false\" & Revit2023 == \"false\" & Revit2022 == \"false\" & Revit2021 == \"false\" & Revit2020 == \"false\" & Revit2019 == \"false\" & Revit2018 == \"false\" & Revit2017 == \"false\")"
     }
     //"Integer": {
     //  "type": "parameter",

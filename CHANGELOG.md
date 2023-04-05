@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] / 2023-04-05
+### Features
+- Add Revit 2024 in the base template
+
 ## [0.4.4] / 2022-11-25
 ### Fixed
 - Fix `README` SolutionTemplates for low revit version
@@ -54,6 +58,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Solution `ricaun-revit-addin-23-17-sln`
 
 [vNext]: ../../compare/1.0.0...HEAD
+[0.5.0]: ../../compare/0.4.4...0.5.0
 [0.4.4]: ../../compare/0.4.3...0.4.4
 [0.4.3]: ../../compare/0.4.2...0.4.3
 [0.4.2]: ../../compare/0.4.1...0.4.2
