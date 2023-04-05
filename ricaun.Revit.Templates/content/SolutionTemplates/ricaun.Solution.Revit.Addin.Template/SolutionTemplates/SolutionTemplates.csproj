@@ -9,6 +9,9 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
     <Configurations>
+<!--#if (Revit2024)
+      Debug 2024; 2024;
+#endif-->
 <!--#if (Revit2023)
       Debug 2023; 2023;
 #endif-->
@@ -77,6 +80,12 @@
     <When Condition="$(Configuration.Contains('2023'))">
       <PropertyGroup>
         <RevitVersion>2023</RevitVersion>
+        <TargetFramework>net48</TargetFramework>
+      </PropertyGroup>
+    </When>
+    <When Condition="$(Configuration.Contains('2024'))">
+      <PropertyGroup>
+        <RevitVersion>2024</RevitVersion>
         <TargetFramework>net48</TargetFramework>
       </PropertyGroup>
     </When>

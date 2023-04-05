@@ -28,6 +28,7 @@ Options | Description | Default
 --Company | Set Project Company PropertyGroup | Company
 --License |  Set Project License MIT | true
 --Description | Set Project Description PropertyGroup | Revit Plugin $(PackageId)
+--Revit2024 | Configuration Version Revit 2024 | false
 --Revit2023 | Configuration Version Revit 2023 | false
 --Revit2022 | Configuration Version Revit 2022 | false
 --Revit2021 | Configuration Version Revit 2021 | false

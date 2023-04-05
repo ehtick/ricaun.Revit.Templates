@@ -14,6 +14,8 @@
 [![Revit 2022](https://img.shields.io/badge/Revit-2022+-blue.svg)](../..)
 #elseif (Revit2023)
 [![Revit 2023](https://img.shields.io/badge/Revit-2023+-blue.svg)](../..)
+#elseif (Revit2024)
+[![Revit 2024](https://img.shields.io/badge/Revit-2024+-blue.svg)](../..)
 #else
 [![Revit 2017](https://img.shields.io/badge/Revit-2017+-blue.svg)](../..)
 #endif-->

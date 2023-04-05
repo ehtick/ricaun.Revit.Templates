@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{99
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+<!--#if (Revit2024)
+		2024|Any CPU = 2024|Any CPU
+		Debug 2024|Any CPU = Debug 2024|Any CPU
+#endif-->
 <!--#if (Revit2023)
 		2023|Any CPU = 2023|Any CPU
 		Debug 2023|Any CPU = Debug 2023|Any CPU
