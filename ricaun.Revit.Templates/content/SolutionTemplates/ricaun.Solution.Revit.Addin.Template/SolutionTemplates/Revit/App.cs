@@ -13,7 +13,7 @@ namespace SolutionTemplates.Revit
         {
             ribbonPanel = application.CreatePanel("SolutionTemplates");
             ribbonPanel.CreatePushButton<Commands.Command>()
-                .SetLargeImage(Properties.Resources.Revit.GetBitmapSource());
+                .SetLargeImage("Resources/Revit.ico");
             return Result.Succeeded;
         }
 

@@ -30,7 +30,7 @@ public interface ITemplateInstaller : IRelease, IHazRelease, IHazContent, ISign,
     /// <param name="project"></param>
     public void CreateTemplateInstaller(Project project)
     {
-        if (!FileSystemTasks.DirectoryExists(ContentDirectory))
+        if (!ContentDirectory.DirectoryExists())
         {
             Serilog.Log.Warning($"Skip Not found: {ContentDirectory}");
             return;
@@ -39,8 +39,8 @@ public interface ITemplateInstaller : IRelease, IHazRelease, IHazContent, ISign,
         var fileName = $"{project.Name} Installer";
         var ProjectDirectory = ReleaseDirectory / fileName;
 
-        PathConstruction.GlobFiles(ContentDirectory, "*.dll")
-                .ForEach(file => FileSystemTasks.DeleteFile(file));
+        Globbing.GlobFiles(ContentDirectory, "*.dll")
+                .ForEach(file => file.DeleteFile());
 
         FileSystemTasks.CopyDirectoryRecursively(ContentDirectory, ProjectDirectory);
 

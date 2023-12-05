@@ -5,6 +5,7 @@ using ricaun.Nuke.Components;
 
 class Build : NukeBuild, IPublishRevit
 {
+    // string IHazMainProject.MainName => "ProjectName";
     // string IHazRevitPackageBuilder.Application => "Revit.App";
     public static int Main() => Execute<Build>(x => x.From<IPublishRevit>().Build);
 }
