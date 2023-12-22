@@ -67,6 +67,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Solution `ricaun-revit-addin-23-17-sln`
 
 [vNext]: ../../compare/1.0.0...HEAD
+[0.5.2]: ../../compare/0.5.1...0.5.2
+[0.5.1]: ../../compare/0.5.0...0.5.1
 [0.5.0]: ../../compare/0.4.4...0.5.0
 [0.4.4]: ../../compare/0.4.3...0.4.4
 [0.4.3]: ../../compare/0.4.2...0.4.3
