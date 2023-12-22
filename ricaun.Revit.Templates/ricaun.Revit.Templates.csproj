@@ -31,7 +31,7 @@
 
   <PropertyGroup>
     <PackageId>ricaun.Revit.Templates</PackageId>
-    <Version>0.5.1</Version>
+    <Version>0.5.2</Version>
     <ProjectGuid>{FFEA3561-7FF6-487D-A04D-AFCC9C73CD8D}</ProjectGuid>
   </PropertyGroup>
 
