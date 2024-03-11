@@ -13,7 +13,7 @@
 [AppLoader]
 public class $VarApp$ : IExternalApplication
 {
-    private static RibbonPanel ribbonPanel;
+    private RibbonPanel ribbonPanel;
     public Result OnStartup(UIControlledApplication application)
     {
         ribbonPanel = application.CreatePanel("$VarName$");

@@ -8,7 +8,7 @@ namespace SolutionTemplates.Revit
     [AppLoader]
     public class App : IExternalApplication
     {
-        private static RibbonPanel ribbonPanel;
+        private RibbonPanel ribbonPanel;
         public Result OnStartup(UIControlledApplication application)
         {
             ribbonPanel = application.CreatePanel("SolutionTemplates");
