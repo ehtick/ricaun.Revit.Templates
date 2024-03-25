@@ -13,18 +13,6 @@
 
   <!-- RevitVersion -->
   <Choose>
-    <When Condition="$(Configuration.Contains('2017'))">
-      <PropertyGroup>
-        <RevitVersion>2017</RevitVersion>
-        <TargetFramework>net46</TargetFramework>
-      </PropertyGroup>
-    </When>
-    <When Condition="$(Configuration.Contains('2018'))">
-      <PropertyGroup>
-        <RevitVersion>2018</RevitVersion>
-        <TargetFramework>net46</TargetFramework>
-      </PropertyGroup>
-    </When>
     <When Condition="$(Configuration.Contains('2019'))">
       <PropertyGroup>
         <RevitVersion>2019</RevitVersion>
@@ -69,8 +57,8 @@
     </When>
     <Otherwise>
       <PropertyGroup>
-        <RevitVersion>2017</RevitVersion>
-        <TargetFramework>net46</TargetFramework>
+        <RevitVersion>2019</RevitVersion>
+        <TargetFramework>net47</TargetFramework>
       </PropertyGroup>
     </Otherwise>
   </Choose>
