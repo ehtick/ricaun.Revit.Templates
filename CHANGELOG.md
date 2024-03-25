@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Features
 - Support `Revit 2025` with `net8.0`
 - Add `PageView`
+- Remove `Revit 2017` and `Revit 2018`
 
 ## [0.5.2] / 2023-12-22
 ### Added
