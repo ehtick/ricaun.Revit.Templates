@@ -91,21 +91,9 @@
       "dataType": "bool",
       "defaultValue": "false"
     },
-    "Revit2018": {
-      "type": "parameter",
-      "description": "Configuration Version Revit 2018",
-      "dataType": "bool",
-      "defaultValue": "false"
-    },
-    "Revit2017": {
-      "type": "parameter",
-      "description": "Configuration Version Revit 2017",
-      "dataType": "bool",
-      "defaultValue": "false"
-    },
     "NoRevitVersion": {
       "type": "computed",
-      "value": "(Revit2025 == \"false\" & Revit2024 == \"false\" & Revit2023 == \"false\" & Revit2022 == \"false\" & Revit2021 == \"false\" & Revit2020 == \"false\" & Revit2019 == \"false\" & Revit2018 == \"false\" & Revit2017 == \"false\")"
+      "value": "(Revit2025 == \"false\" & Revit2024 == \"false\" & Revit2023 == \"false\" & Revit2022 == \"false\" & Revit2021 == \"false\" & Revit2020 == \"false\" & Revit2019 == \"false\")"
     }
     //"Integer": {
     //  "type": "parameter",
