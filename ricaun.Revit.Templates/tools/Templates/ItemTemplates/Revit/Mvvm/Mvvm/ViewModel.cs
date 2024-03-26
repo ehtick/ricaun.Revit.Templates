@@ -3,6 +3,7 @@ using $rootnamespace$.Models;
 using ricaun.Revit.Mvvm;
 using ricaun.Revit.UI;
 using System;
+using System.Collections.ObjectModel;
 using System.Windows;
 
 namespace $rootnamespace$.ViewModels
