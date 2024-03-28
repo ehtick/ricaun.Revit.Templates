@@ -16,8 +16,10 @@
 [![Revit 2023](https://img.shields.io/badge/Revit-2023+-blue.svg)](../..)
 #elseif (Revit2024)
 [![Revit 2024](https://img.shields.io/badge/Revit-2024+-blue.svg)](../..)
+#elseif (Revit2025)
+[![Revit 2025](https://img.shields.io/badge/Revit-2025+-blue.svg)](../..)
 #else
-[![Revit 2017](https://img.shields.io/badge/Revit-2017+-blue.svg)](../..)
+[![Revit 2019](https://img.shields.io/badge/Revit-2019+-blue.svg)](../..)
 #endif-->
 [![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](../..)
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)

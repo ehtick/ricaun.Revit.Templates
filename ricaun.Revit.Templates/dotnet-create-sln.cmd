@@ -2,6 +2,7 @@
 CALL :CreateSolution ricaun-revit-addin-sln ricaun.RevitAddin
 CALL :CreateSolution ricaun-revit-addin-sln ricaun.RevitAddin2023 --Revit2023 True
 CALL :CreateSolution ricaun-revit-addin-sln ricaun.RevitAddin2024 --Revit2024 True
+CALL :CreateSolution ricaun-revit-addin-sln ricaun.RevitAddin2025 --Revit2025 True
 timeout 5
 EXIT /B 0
 

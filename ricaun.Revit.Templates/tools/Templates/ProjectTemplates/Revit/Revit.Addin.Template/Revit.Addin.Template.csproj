@@ -13,18 +13,6 @@
 
   <!-- RevitVersion -->
   <Choose>
-    <When Condition="$(Configuration.Contains('2017'))">
-      <PropertyGroup>
-        <RevitVersion>2017</RevitVersion>
-        <TargetFramework>net46</TargetFramework>
-      </PropertyGroup>
-    </When>
-    <When Condition="$(Configuration.Contains('2018'))">
-      <PropertyGroup>
-        <RevitVersion>2018</RevitVersion>
-        <TargetFramework>net46</TargetFramework>
-      </PropertyGroup>
-    </When>
     <When Condition="$(Configuration.Contains('2019'))">
       <PropertyGroup>
         <RevitVersion>2019</RevitVersion>
@@ -61,13 +49,26 @@
         <TargetFramework>net48</TargetFramework>
       </PropertyGroup>
     </When>
+    <When Condition="$(Configuration.Contains('2025'))">
+      <PropertyGroup>
+        <RevitVersion>2025</RevitVersion>
+        <TargetFramework>net8.0-windows</TargetFramework>
+      </PropertyGroup>
+    </When>
     <Otherwise>
       <PropertyGroup>
-        <RevitVersion>2017</RevitVersion>
-        <TargetFramework>net46</TargetFramework>
+        <RevitVersion>2019</RevitVersion>
+        <TargetFramework>net47</TargetFramework>
       </PropertyGroup>
     </Otherwise>
   </Choose>
+
+  <!-- Net Core -->
+  <PropertyGroup Condition="!$(TargetFramework.StartsWith('net4'))">
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+  </PropertyGroup>
 
   <!-- Release -->
   <PropertyGroup Condition="!$(Configuration.Contains('Debug'))">

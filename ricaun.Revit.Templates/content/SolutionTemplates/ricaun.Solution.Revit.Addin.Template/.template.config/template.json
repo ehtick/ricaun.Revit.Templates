@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "ricaun",
-  "name": "Solution Revit Addin Template",
+  "name": "Revit Addin Template Solution",
   "shortName": "ricaun-revit-addin-sln",
   "identity": "ricaun.Solution.Revit.Addin.Template",
   "defaultName": "RevitAddin",
@@ -9,7 +9,7 @@
   "description": "Solution for Revit C# .NET add-in project with Build",
   "classifications": [ "ricaun", "Revit", "Solution" ],
   "tags": {
-    "platform": "Windows",
+    "platform": ".NET",
     "language": "C#",
     "type": "solution"
   },
@@ -49,21 +49,27 @@
       "datatype": "string",
       "defaultValue": "Revit Plugin Description for $(PackageId)."
     },
+    "Revit2025": {
+      "type": "parameter",
+      "description": "Configuration Version Revit 2025",
+      "dataType": "bool",
+      "defaultValue": "false"
+    },
     "Revit2024": {
       "type": "parameter",
-      "description": " Configuration Version Revit 2024",
+      "description": "Configuration Version Revit 2024",
       "dataType": "bool",
       "defaultValue": "false"
     },
     "Revit2023": {
       "type": "parameter",
-      "description": " Configuration Version Revit 2023",
+      "description": "Configuration Version Revit 2023",
       "dataType": "bool",
       "defaultValue": "false"
     },
     "Revit2022": {
       "type": "parameter",
-      "description": " Configuration Version Revit 2022",
+      "description": "Configuration Version Revit 2022",
       "dataType": "bool",
       "defaultValue": "false"
     },
@@ -85,21 +91,9 @@
       "dataType": "bool",
       "defaultValue": "false"
     },
-    "Revit2018": {
-      "type": "parameter",
-      "description": "Configuration Version Revit 2018",
-      "dataType": "bool",
-      "defaultValue": "false"
-    },
-    "Revit2017": {
-      "type": "parameter",
-      "description": "Configuration Version Revit 2017",
-      "dataType": "bool",
-      "defaultValue": "false"
-    },
     "NoRevitVersion": {
       "type": "computed",
-      "value": "(Revit2024 == \"false\" & Revit2023 == \"false\" & Revit2022 == \"false\" & Revit2021 == \"false\" & Revit2020 == \"false\" & Revit2019 == \"false\" & Revit2018 == \"false\" & Revit2017 == \"false\")"
+      "value": "(Revit2025 == \"false\" & Revit2024 == \"false\" & Revit2023 == \"false\" & Revit2022 == \"false\" & Revit2021 == \"false\" & Revit2020 == \"false\" & Revit2019 == \"false\")"
     }
     //"Integer": {
     //  "type": "parameter",

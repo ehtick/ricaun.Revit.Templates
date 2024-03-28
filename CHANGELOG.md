@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] / 2024-03-25
+### Features
+- Support `Revit 2025` with `net8.0`
+- Add `PageView`
+- Remove `Revit 2017` and `Revit 2018`
+- Update `Image` icon.
+- Remove `ide.host.json` to fix create solution issue.
+
 ## [0.5.2] / 2023-12-22
 ### Added
 - Add `ricaun.AppLoader` on readme
@@ -67,6 +75,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Solution `ricaun-revit-addin-23-17-sln`
 
 [vNext]: ../../compare/1.0.0...HEAD
+[0.6.0]: ../../compare/0.5.2...0.6.0
 [0.5.2]: ../../compare/0.5.1...0.5.2
 [0.5.1]: ../../compare/0.5.0...0.5.1
 [0.5.0]: ../../compare/0.4.4...0.5.0
