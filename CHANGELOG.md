@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Remove `Revit 2017` and `Revit 2018`
 - Update `Image` icon.
 - Remove `ide.host.json` to fix create solution issue.
+- Remove `ProjectTemplates` from tools.
+- Add `ProjectTemplates` in the `content`.
 
 ## [0.5.2] / 2023-12-22
 ### Added
