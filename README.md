@@ -34,8 +34,6 @@ Options | Description | Default
 --Revit2021 | Configuration Version Revit 2021 | false
 --Revit2020 | Configuration Version Revit 2020 | false
 --Revit2019 | Configuration Version Revit 2019 | false
---Revit2018 | Configuration Version Revit 2018 | false
---Revit2017 | Configuration Version Revit 2017 | false
 
 ### ItemTemplates
 The `ItemTemplates` are installed automatically in `Visual Studio 2022` when [ricaun.AppLoader](https://ricaun.com/AppLoader/) plugin installs the package.
