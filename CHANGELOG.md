@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Remove `ProjectTemplates` from tools.
 - Add `ProjectTemplates` in the `content`.
 - Update `Build` to net8.0
+- Update `Image` icon with cyan.
 
 ## [0.6.0] / 2024-03-25
 ### Features
