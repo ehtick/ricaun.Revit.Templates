@@ -7,7 +7,7 @@ using ricaun.Nuke;
 using ricaun.Nuke.Components;
 using ricaun.Nuke.Extensions;
 
-class Build : NukeBuild, IPublishPack, ITemplateInstaller
+class Build : NukeBuild, IPublishPack, ITemplateInstaller, IPrePack
 {
     public static int Main() => Execute<Build>(x => x.From<IPublishPack>().Build);
 }

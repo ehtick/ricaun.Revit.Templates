@@ -10,7 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+<!--#if (IsTypeNone)-->
+    <PackageReference Include="ricaun.Nuke" Version="*" />
+<!--#endif-->
+<!--#if (IsTypePack)-->
+    <PackageReference Include="ricaun.Nuke" Version="*" />
+<!--#endif-->
+<!--#if (IsTypeRevit)-->
     <PackageReference Include="ricaun.Nuke.PackageBuilder" Version="*" />
+<!--#endif-->
   </ItemGroup>
 
   <ItemGroup>
