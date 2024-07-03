@@ -128,7 +128,6 @@
   <PropertyGroup>
     <PackageId>SolutionTemplates</PackageId>
     <Version>1.0.0</Version>
-    <ProjectGuid>{$guid1$}</ProjectGuid>
   </PropertyGroup>
 
   <PropertyGroup>
