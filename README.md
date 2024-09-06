@@ -13,7 +13,7 @@ RevitAddin Templates and ItemTemplates for C# Applications.
 This package is automatically installed when using the [ricaun.AppLoader](https://ricaun.com/AppLoader/) plugin.
 
 * Install [.Net SDK](https://dotnet.microsoft.com/download) or [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
-* Run `dotnet new -i ricaun.Revit.Templates` 
+* Run `dotnet new install ricaun.Revit.Templates` 
 
 ## Template
 * Run `dotnet new ricaun-revit-addin-sln -n ProjectName`
@@ -57,8 +57,8 @@ The `ProjectTemplates` are installed automatically in `Visual Studio 2022` when 
 
 Project | Description
 --------|-------------
-ricaun.Nuke.PublishRevit | Project with ricaun.Nuke for Revit Publish Build
-Revit.Addin.Template | Project library template for a Revit C# .NET add-in
+ricaun.Nuke.Project | Project with ricaun.Nuke Publish Build
+ricaun.Revit.Addin.Project | Project library template for a Revit C# .NET add-in
 
 ### Snippets
 The `Snippets` are installed automatically in `Visual Studio 2022` when [ricaun.AppLoader](https://ricaun.com/AppLoader/) plugin installs the package.
