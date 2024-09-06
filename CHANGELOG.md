@@ -6,7 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.7.0] / 2024-09-06
 ### Fixed
-- Fix `Build` install dotnet sdk to `LTS` version.
+- Fix `Build` project install dotnet sdk to `LTS` version.
+- Fix `build.sh` to use correct project name.
 
 ## [0.6.2] / 2024-05-07 - 2024-07-02
 ### Updated
