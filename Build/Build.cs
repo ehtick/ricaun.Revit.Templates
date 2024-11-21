@@ -18,7 +18,8 @@ class Build : NukeBuild, IPublishPack, ITemplateInstaller, IPrePack
 public interface ITemplateInstaller : IRelease, IHazRelease, IHazContent, ISign, INukeBuild
 {
     Target TemplateInstaller => _ => _
-        .TriggeredBy(Release)
+        .TriggeredBy(Compile)
+        .After(Release)
         .Executes(() =>
         {
             CreateTemplateInstaller(MainProject);
@@ -36,7 +37,7 @@ public interface ITemplateInstaller : IRelease, IHazRelease, IHazContent, ISign,
             return;
         }
 
-        var fileName = $"{project.Name} Installer";
+        var fileName = $"{project.Name}.Installer";
         var ProjectDirectory = ReleaseDirectory / fileName;
 
         Globbing.GlobFiles(ContentDirectory, "*.dll")
@@ -46,5 +47,7 @@ public interface ITemplateInstaller : IRelease, IHazRelease, IHazContent, ISign,
 
         var zipFile = ReleaseDirectory / $"{fileName}.zip";
         ZipExtension.CreateFromDirectory(ProjectDirectory, zipFile);
+
+        Serilog.Log.Information($"Create: {fileName}.zip");
     }
 }

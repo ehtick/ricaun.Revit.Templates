@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add `Directory.Build.props` in the main solution.
 ### Build
 - Update `FileSystemTasks.CopyDirectoryRecursively` to `AbsolutePathExtensions.Copy` in `Build` project.
+- Update `CreateTemplateInstaller` order to release in `GitHub`.
 
 ## [0.7.0] / 2024-09-06
 ### Fixed

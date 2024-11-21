@@ -82,6 +82,10 @@ rapp | Creates new class App with IExternalApplication
 rappdb | Creates new class AppDB with IExternalDBApplication
 rcommand | Creates new class Command with IExternalCommand
 
+## Manual Installation
+
+todo...
+
 ## Release
 
 * [Latest release](../../releases/latest)
