@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.8.0] / 2024-11-21
+### Updated
+- Add `Directory.Build.props` in the main solution.
+### Build
+- Update `FileSystemTasks.CopyDirectoryRecursively` to `AbsolutePathExtensions.Copy` in `Build` project.
+- Update `CreateTemplateInstaller` before and after to release in `GitHub`.
+
 ## [0.7.0] / 2024-09-06
 ### Fixed
 - Fix `Build` project install dotnet sdk to `LTS` version.
@@ -94,6 +101,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Solution `ricaun-revit-addin-23-17-sln`
 
 [vNext]: ../../compare/1.0.0...HEAD
+[0.8.0]: ../../compare/0.7.0...0.8.0
 [0.7.0]: ../../compare/0.6.2...0.7.0
 [0.6.2]: ../../compare/0.6.1...0.6.2
 [0.6.1]: ../../compare/0.6.0...0.6.1

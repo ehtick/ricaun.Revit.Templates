@@ -82,6 +82,20 @@ rapp | Creates new class App with IExternalApplication
 rappdb | Creates new class AppDB with IExternalDBApplication
 rcommand | Creates new class Command with IExternalCommand
 
+## Manual Installation
+
+Download the latest [ricaun.Revit.Templates.Install.zip](../../releases/latest) and extract the files.
+
+* The `dotnet install.cmd` force to install file `ricaun.Revit.Templates.{version}.nupkg`.
+* The `dotnet uninstall.cmd` force to uninstall `ricaun.Revit.Templates` from the `dotnet`.
+
+### Manual Installation Tools
+
+Inside the `tools` folder are the `install.cmd` and `uninstall.cmd` files to install/uninstall the item and snippets `Visual Studio 2022` templates.
+
+* The `install.cmd` force to install the `ItemTemplates` and `Snippets` in the `Visual Studio 2022` user folder.
+* The `uninstall.cmd` force to uninstall the `ItemTemplates` and `Snippets` in the `Visual Studio 2022` user folder.
+
 ## Release
 
 * [Latest release](../../releases/latest)

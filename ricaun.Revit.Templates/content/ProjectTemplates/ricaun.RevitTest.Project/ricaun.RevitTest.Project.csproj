@@ -2,9 +2,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <IsTestProject>true</IsTestProject>
     <OutputType>Library</OutputType>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <UseWPF>true</UseWPF>
     <LangVersion>latest</LangVersion>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
@@ -29,12 +29,6 @@
 #endif-->
 <!--#if (Revit2019)
       Debug 2019; 2019;
-#endif-->
-<!--#if (Revit2018)
-      Debug 2018; 2018;
-#endif-->
-<!--#if (Revit2017)
-      Debug 2017; 2017;
 #endif-->
 <!--#if (NoRevitVersion)
       Debug; Release;
@@ -113,73 +107,36 @@
   <!-- Debug -->
   <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\Debug\$(RevitVersion)</OutputPath>
     <DefineConstants>$(DefineConstants);DEBUG;TRACE;REVIT$(RevitVersion)</DefineConstants>
     <DebugType>Full</DebugType>
   </PropertyGroup>
 
-  <!-- DebugRevitVersion -->
-  <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
-    <DebugRevitVersion>$(RevitVersion)</DebugRevitVersion>
-    <StartAction>Program</StartAction>
-    <StartProgram>C:\Program Files\Autodesk\Revit $(DebugRevitVersion)\Revit.exe</StartProgram>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <PackageId>SolutionTemplates</PackageId>
-    <Version Condition="'$(Version)' == ''">1.0.0</Version>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <PackageAssemblyVersion></PackageAssemblyVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
-    <IncludePackageReferencesDuringMarkupCompilation>false</IncludePackageReferencesDuringMarkupCompilation>
-    <Revision>$([MSBuild]::Divide($([System.DateTime]::Now.TimeOfDay.TotalSeconds), 4).ToString('F0'))</Revision>
-    <PackageAssemblyVersion>.Dev.$(Version).$(Revision)</PackageAssemblyVersion>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <Company>CompanyReplace</Company>
-    <Authors>AuthorsReplace</Authors>
-    <Description>DescriptionReplace</Description>
-    <CopyrightYears>$([System.DateTime]::Now.ToString('yyyy'))</CopyrightYears>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <AssemblyName>$(PackageId)$(PackageAssemblyVersion)</AssemblyName>
-    <Product>$(PackageId)</Product>
-    <Copyright>Copyright © $(CopyrightYears) $(Company)</Copyright>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="ricaun.Revit.UI" Version="*"/>
-    <PackageReference Include="ricaun.Revit.Mvvm" Version="*"/>
+    <None Include="RevitTest.cs" />
+    <None Include="Utils\OneTimeOpenDocumentTest.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Revit\App.cs" />
-    <None Include="Revit\Commands\Command.cs" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="ricaun.RevitTest.TestAdapter" Version="*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="*" Condition="!$(TargetFramework.StartsWith('net4'))" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Resources\Revit.ico" />
-  </ItemGroup>
-
-  <!-- Fody -->
-  <ItemGroup>
-    <PackageReference Include="PropertyChanged.Fody" Version="3.*" IncludeAssets="build; compile" PrivateAssets="all" />
-  </ItemGroup>
-  <PropertyGroup>
-    <WeaverConfiguration>
-      <Weavers>
-        <PropertyChanged />
-      </Weavers>
-    </WeaverConfiguration>
-  </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="$(RevitVersion).*" IncludeAssets="build; compile" PrivateAssets="All" />
+  </ItemGroup>
+
+  <!-- Release -->
+  <ItemGroup Condition="!$(Configuration.Contains('Debug'))">
+    <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+      <_Parameter1>NUnit.Open</_Parameter1>
+      <_Parameter2>true</_Parameter2>
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+      <_Parameter1>NUnit.Close</_Parameter1>
+      <_Parameter2>true</_Parameter2>
+    </AssemblyAttribute>
   </ItemGroup>
 
 </Project>
