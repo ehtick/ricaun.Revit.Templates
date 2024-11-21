@@ -1,6 +1,7 @@
 @ECHO OFF
 CALL :CreateSolution ricaun-nuke-project ricaun.Build
 CALL :CreateSolution ricaun-revit-addin-project ricaun.RevitAddin.Project
+CALL :CreateSolution ricaun-revittest-project ricaun.RevitTest.Project
 timeout 5
 EXIT /B 0
 
