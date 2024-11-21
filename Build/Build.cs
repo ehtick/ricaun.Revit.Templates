@@ -19,7 +19,8 @@ public interface ITemplateInstaller : IRelease, IHazRelease, IHazContent, ISign,
 {
     Target TemplateInstaller => _ => _
         .TriggeredBy(Compile)
-        .After(Release)
+        .After(Sign)
+        .Before(Release)
         .Executes(() =>
         {
             CreateTemplateInstaller(MainProject);
