@@ -42,7 +42,7 @@ public interface ITemplateInstaller : IRelease, IHazRelease, IHazContent, ISign,
         Globbing.GlobFiles(ContentDirectory, "*.dll")
                 .ForEach(file => file.DeleteFile());
 
-        FileSystemTasks.CopyDirectoryRecursively(ContentDirectory, ProjectDirectory);
+        AbsolutePathExtensions.Copy(ContentDirectory, ProjectDirectory);
 
         var zipFile = ReleaseDirectory / $"{fileName}.zip";
         ZipExtension.CreateFromDirectory(ProjectDirectory, zipFile);

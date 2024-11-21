@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.8.0] / 2024-11-21
 ### Updated
 - Add `Directory.Build.props` in the main solution.
+### Build
+- Update `FileSystemTasks.CopyDirectoryRecursively` to `AbsolutePathExtensions.Copy` in `Build` project.
 
 ## [0.7.0] / 2024-09-06
 ### Fixed
