@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.8.1] / 2024-11-28
+### Updated
+- Fix `ricaun.Revit.Addin.Project` package id name.
+- Update `ricaun.RevitTest.Project` to use multiple target frameworks by default.
+- Update `ricaun.Revit.Addin.Project` to use multiple target frameworks by default.
+- Update `ricaun.Solution.Revit.Addin.Template` to use multiple target frameworks by default.
+
 ## [0.8.0] / 2024-11-21
 ### Updated
 - Add `Directory.Build.props` in the main solution.
@@ -101,6 +108,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Solution `ricaun-revit-addin-23-17-sln`
 
 [vNext]: ../../compare/1.0.0...HEAD
+[0.8.1]: ../../compare/0.8.0...0.8.1
 [0.8.0]: ../../compare/0.7.0...0.8.0
 [0.7.0]: ../../compare/0.6.2...0.7.0
 [0.6.2]: ../../compare/0.6.1...0.6.2
