@@ -6,37 +6,39 @@
     <OutputType>Library</OutputType>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>latest</LangVersion>
+<!--#if (!NoRevitVersion)
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
-    <Configurations>
-<!--#if (Revit2025)
-      Debug 2025; 2025;
-#endif-->
-<!--#if (Revit2024)
-      Debug 2024; 2024;
-#endif-->
-<!--#if (Revit2023)
-      Debug 2023; 2023;
-#endif-->
-<!--#if (Revit2022)
-      Debug 2022; 2022;
-#endif-->
-<!--#if (Revit2021)
-      Debug 2021; 2021;
-#endif-->
-<!--#if (Revit2020)
-      Debug 2020; 2020;
-#endif-->
-<!--#if (Revit2019)
-      Debug 2019; 2019;
 #endif-->
 <!--#if (NoRevitVersion)
-      Debug; Release;
+    <TargetFrameworks>net47;net48;net8.0-windows</TargetFrameworks>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
 #endif-->
-    </Configurations>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+<!--#if (Revit2025)
+    <Configurations>Debug 2025; 2025;</Configurations>
+#endif-->
+<!--#if (Revit2024)
+    <Configurations>Debug 2024; 2024;</Configurations>
+#endif-->
+<!--#if (Revit2023)
+    <Configurations>Debug 2023; 2023;</Configurations>
+#endif-->
+<!--#if (Revit2022)
+    <Configurations>Debug 2022; 2022;</Configurations>
+#endif-->
+<!--#if (Revit2021)
+    <Configurations>Debug 2021; 2021;</Configurations>
+#endif-->
+<!--#if (Revit2020)
+    <Configurations>Debug 2020; 2020;</Configurations>
+#endif-->
+<!--#if (Revit2019)
+    <Configurations>Debug 2019; 2019;</Configurations>
+#endif-->
   </PropertyGroup>
 
   <!-- RevitVersion -->
+<!--#if (!NoRevitVersion)
   <Choose>
     <When Condition="$(Configuration.Contains('2019'))">
       <PropertyGroup>
@@ -87,9 +89,29 @@
       </PropertyGroup>
     </Otherwise>
   </Choose>
-
+#endif-->
+<!--#if (NoRevitVersion)
+  <Choose>
+    <When Condition="$(TargetFramework.StartsWith('net47'))">
+      <PropertyGroup>
+        <RevitVersion>2019</RevitVersion>
+      </PropertyGroup>
+    </When>
+    <When Condition="$(TargetFramework.StartsWith('net48'))">
+      <PropertyGroup>
+        <RevitVersion>2021</RevitVersion>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <RevitVersion>2025</RevitVersion>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+#endif-->
+  
   <!-- Net Core -->
-  <PropertyGroup Condition="!$(TargetFramework.StartsWith('net4'))">
+  <PropertyGroup Condition="$(DefineConstants.Contains('NETCOREAPP'))">
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <GenerateDependencyFile>false</GenerateDependencyFile>
@@ -120,7 +142,7 @@
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="ricaun.RevitTest.TestAdapter" Version="*" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="*" Condition="!$(TargetFramework.StartsWith('net4'))" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="*" Condition="$(DefineConstants.Contains('NETCOREAPP'))" />
   </ItemGroup>
 
   <ItemGroup>

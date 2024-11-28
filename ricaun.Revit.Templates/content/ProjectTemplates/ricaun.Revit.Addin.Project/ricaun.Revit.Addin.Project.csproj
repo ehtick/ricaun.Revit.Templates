@@ -95,7 +95,7 @@
   </Choose>
 
   <!-- Net Core -->
-  <PropertyGroup Condition="!$(TargetFramework.StartsWith('net4'))">
+  <PropertyGroup Condition="$(DefineConstants.Contains('NETCOREAPP'))">
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <GenerateDependencyFile>false</GenerateDependencyFile>
