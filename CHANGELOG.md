@@ -7,7 +7,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.8.1] / 2024-11-28
 ### Updated
 - Fix `ricaun.Revit.Addin.Project` package id name.
-- Replace `!$(TargetFramework.StartsWith('net4'))` to `$(DefineConstants.Contains('NETCOREAPP'))`
 - Update `ricaun.RevitTest.Project` to use multiple target frameworks by default.
 - Update `ricaun.Revit.Addin.Project` to use multiple target frameworks by default.
 - Update `ricaun.Solution.Revit.Addin.Template` to use multiple target frameworks by default.

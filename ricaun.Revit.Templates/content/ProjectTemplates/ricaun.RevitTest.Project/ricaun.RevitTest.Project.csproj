@@ -123,7 +123,7 @@
 #endif-->
   
   <!-- Net Core -->
-  <PropertyGroup Condition="$(DefineConstants.Contains('NETCOREAPP'))">
+  <PropertyGroup Condition="!$(TargetFramework.StartsWith('net4'))">
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <GenerateDependencyFile>false</GenerateDependencyFile>
@@ -154,7 +154,7 @@
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="ricaun.RevitTest.TestAdapter" Version="*" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="*" Condition="$(DefineConstants.Contains('NETCOREAPP'))" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="*" Condition="!$(TargetFramework.StartsWith('net4'))" />
   </ItemGroup>
 
   <ItemGroup>
