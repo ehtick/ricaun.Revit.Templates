@@ -14,26 +14,38 @@
     <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
 #endif-->
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+<!--#if (!NoRevitVersion)
+    <Configurations>
+#endif-->
 <!--#if (Revit2025)
-    <Configurations>Debug 2025; 2025;</Configurations>
+      Debug 2025; 2025;
 #endif-->
 <!--#if (Revit2024)
-    <Configurations>Debug 2024; 2024;</Configurations>
+      Debug 2024; 2024;
 #endif-->
 <!--#if (Revit2023)
-    <Configurations>Debug 2023; 2023;</Configurations>
+      Debug 2023; 2023;
 #endif-->
 <!--#if (Revit2022)
-    <Configurations>Debug 2022; 2022;</Configurations>
+      Debug 2022; 2022;
 #endif-->
 <!--#if (Revit2021)
-    <Configurations>Debug 2021; 2021;</Configurations>
+      Debug 2021; 2021;
 #endif-->
 <!--#if (Revit2020)
-    <Configurations>Debug 2020; 2020;</Configurations>
+      Debug 2020; 2020;
 #endif-->
 <!--#if (Revit2019)
-    <Configurations>Debug 2019; 2019;</Configurations>
+      Debug 2019; 2019;
+#endif-->
+<!--#if (Revit2018)
+      Debug 2018; 2018;
+#endif-->
+<!--#if (Revit2017)
+      Debug 2017; 2017;
+#endif-->
+<!--#if (!NoRevitVersion)
+    </Configurations>
 #endif-->
   </PropertyGroup>
 
