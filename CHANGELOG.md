@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.8.2] / 2025-03-17
+### Updated
+- Update MIT License year.
+
 ## [0.8.1] / 2024-11-28
 ### Updated
 - Fix `ricaun.Revit.Addin.Project` package id name.
@@ -108,6 +112,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Solution `ricaun-revit-addin-23-17-sln`
 
 [vNext]: ../../compare/1.0.0...HEAD
+[0.8.2]: ../../compare/0.8.1...0.8.2
 [0.8.1]: ../../compare/0.8.0...0.8.1
 [0.8.0]: ../../compare/0.7.0...0.8.0
 [0.7.0]: ../../compare/0.6.2...0.7.0
