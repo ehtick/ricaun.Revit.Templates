@@ -18,6 +18,8 @@
 [![Revit 2024](https://img.shields.io/badge/Revit-2024+-blue.svg)](../..)
 #elseif (Revit2025)
 [![Revit 2025](https://img.shields.io/badge/Revit-2025+-blue.svg)](../..)
+#elseif (Revit2026)
+[![Revit 2026](https://img.shields.io/badge/Revit-2026+-blue.svg)](../..)
 #else
 [![Revit 2019](https://img.shields.io/badge/Revit-2019+-blue.svg)](../..)
 #endif-->
