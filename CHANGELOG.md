@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Updated
 - Support `Revit 2026` in `ricaun.RevitTest.Project`.
 - Support `Revit 2026` in `ricaun.Revit.Addin.Project`.
+- Support `Revit 2026` in `ricaun.Solution.Revit.Addin.Template`.
 
 ## [0.8.2] / 2025-03-17
 ### Updated
