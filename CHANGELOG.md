@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Features
 - Support `Revit 2026` projects and solutions.
 ### Updated
-- Change debug to include `RevitVersion` when `!NoRevitVersion`.
+- Change debug to include `RevitVersion` when `!NoRevitVersion`. (Fix: #21)
 
 ## [0.8.3] / 2025-04-04
 ### Features
