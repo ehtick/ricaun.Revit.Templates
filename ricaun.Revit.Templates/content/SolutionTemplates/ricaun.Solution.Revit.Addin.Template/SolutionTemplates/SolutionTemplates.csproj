@@ -150,7 +150,12 @@
   <!-- Debug -->
   <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
     <DebugSymbols>true</DebugSymbols>
+<!--#if (!NoRevitVersion)
+    <OutputPath>bin\Debug\$(RevitVersion)</OutputPath>
+#endif-->
+<!--#if (NoRevitVersion)
     <OutputPath>bin\Debug\</OutputPath>
+#endif-->
     <DefineConstants>$(DefineConstants);DEBUG;TRACE;REVIT$(RevitVersion)</DefineConstants>
     <DebugType>Full</DebugType>
   </PropertyGroup>

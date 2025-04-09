@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.9.0] / 2025-04-09
+### Features
+- Support `Revit 2026` projects and solutions.
+### Updated
+- Change debug to include `RevitVersion` when `!NoRevitVersion`.
+
 ## [0.8.3] / 2025-04-04
 ### Features
 - Support `Revit 2026` projects and solutions.
@@ -120,6 +126,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Solution `ricaun-revit-addin-23-17-sln`
 
 [vNext]: ../../compare/1.0.0...HEAD
+[0.9.0]: ../../compare/0.8.3...0.9.0
 [0.8.3]: ../../compare/0.8.2...0.8.3
 [0.8.2]: ../../compare/0.8.1...0.8.2
 [0.8.1]: ../../compare/0.8.0...0.8.1
