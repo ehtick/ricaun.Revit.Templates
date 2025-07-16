@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.9.2] / 2025-07-16
+### Features
+- Support `AutoCAD` solution.
+### Updated
+- Add `ide.host.json` to support custom `icon` with `symbolInfo`.
+- Update `icon.png` to `128x128` with dark theme disable.
+
 ## [0.9.1] / 2025-04-10
 ### Updated
 - Support `Revit 2026` in `ricaun.Revit.Addin.Project`. (Fix: `template.json`)
@@ -130,6 +137,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Solution `ricaun-revit-addin-23-17-sln`
 
 [vNext]: ../../compare/1.0.0...HEAD
+[0.9.2]: ../../compare/0.9.1...0.9.2
 [0.9.1]: ../../compare/0.9.0...0.9.1
 [0.9.0]: ../../compare/0.8.3...0.9.0
 [0.8.3]: ../../compare/0.8.2...0.8.3
