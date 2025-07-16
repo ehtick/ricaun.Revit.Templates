@@ -1,10 +1,6 @@
 # SolutionTemplates
 
-<!--#if (AutoCAD2017)
-[![AutoCAD 2017](https://img.shields.io/badge/AutoCAD-2017+-blue.svg)](../..)
-#elseif (AutoCAD2018)
-[![AutoCAD 2018](https://img.shields.io/badge/AutoCAD-2018+-blue.svg)](../..)
-#elseif (AutoCAD2019)
+<!--#if (AutoCAD2019)
 [![AutoCAD 2019](https://img.shields.io/badge/AutoCAD-2019+-blue.svg)](../..)
 #elseif (AutoCAD2020)
 [![AutoCAD 2020](https://img.shields.io/badge/AutoCAD-2020+-blue.svg)](../..)
