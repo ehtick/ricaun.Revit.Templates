@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/vs-2017.3.host",
-  "icon": "AutoCADIcon.png",
+  "icon": "RevitIcon.png",
   "symbolInfo": [
     {
       "id": "Authors"
@@ -15,28 +15,28 @@
       "id": "Description"
     },
     {
-      "id": "AutoCAD2026"
+      "id": "Revit2026"
     },
     {
-      "id": "AutoCAD2025"
+      "id": "Revit2025"
     },
     {
-      "id": "AutoCAD2024"
+      "id": "Revit2024"
     },
     {
-      "id": "AutoCAD2023"
+      "id": "Revit2023"
     },
     {
-      "id": "AutoCAD2022"
+      "id": "Revit2022"
     },
     {
-      "id": "AutoCAD2021"
+      "id": "Revit2021"
     },
     {
-      "id": "AutoCAD2020"
+      "id": "Revit2020"
     },
     {
-      "id": "AutoCAD2019"
+      "id": "Revit2019"
     }
   ]
 }
