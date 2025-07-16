@@ -114,10 +114,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="content\SolutionTemplates\ricaun.Solution.AutoCAD.Addin.Template\.template.config\icon.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Update="tools\**\*">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
