@@ -168,7 +168,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>ricaun.Revit.Addin.Project</PackageId>
+    <PackageId>ProjectTemplates</PackageId>
     <Version Condition="'$(Version)' == ''">1.0.0</Version>
   </PropertyGroup>
 

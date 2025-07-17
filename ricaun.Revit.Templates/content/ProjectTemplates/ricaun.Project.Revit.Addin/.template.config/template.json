@@ -5,7 +5,7 @@
   "shortName": "ricaun-revit-addin-project",
   "identity": "ricaun.Project.Revit.Addin.Template",
   "defaultName": "RevitAddin",
-  "sourceName": "ricaun.Revit.Addin.Project",
+  "sourceName": "ProjectTemplates",
   "description": "Template for Revit C# .NET add-in project",
   "classifications": [ "ricaun", "Revit", "Library" ],
   "tags": {

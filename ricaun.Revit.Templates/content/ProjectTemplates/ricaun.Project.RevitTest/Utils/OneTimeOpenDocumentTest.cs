@@ -2,7 +2,7 @@
 using Autodesk.Revit.DB;
 using NUnit.Framework;
 
-namespace ricaun.RevitTest.Project.Utils
+namespace ProjectTemplates.Utils
 {
     /// <summary>
     /// OneTimeOpenDocumentTest

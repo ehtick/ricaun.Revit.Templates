@@ -5,7 +5,7 @@
   "shortName": "ricaun-revittest-project",
   "identity": "ricaun.Project.RevitTest.Template",
   "defaultName": "RevitTest.Tests",
-  "sourceName": "ricaun.RevitTest.Project",
+  "sourceName": "ProjectTemplates",
   "description": "Template for Revit C# .NET test project",
   "classifications": [ "ricaun", "Revit", "Library", "Test" ],
   "tags": {

@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Update `icon.png` to `128x128` with dark theme disable.
 - Add `ricaun.Project.AutoCAD.Addin` project template.
 - Rename templates to start with `Project` or `Solution` to reorder by name.
+- Rename projects to use `ProjectTemplates` as name.
 
 ## [0.9.1] / 2025-04-10
 ### Updated
@@ -27,7 +28,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Features
 - Support `Revit 2026` projects and solutions.
 ### Updated
-- Support `Revit 2026` in `ricaun.RevitTest.Project`.
+- Support `Revit 2026` in `
+- `.
 - Support `Revit 2026` in `ricaun.Revit.Addin.Project`.
 - Support `Revit 2026` in `ricaun.Solution.Revit.Addin.Template`.
 
