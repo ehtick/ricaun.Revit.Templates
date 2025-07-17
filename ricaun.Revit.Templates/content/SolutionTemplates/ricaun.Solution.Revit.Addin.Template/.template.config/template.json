@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "ricaun",
-  "name": "Revit Addin Template Solution",
+  "name": "Solution Autodesk Revit Addin Template",
   "shortName": "ricaun-revit-addin-sln",
   "identity": "ricaun.Solution.Revit.Addin.Template",
   "defaultName": "RevitAddin",

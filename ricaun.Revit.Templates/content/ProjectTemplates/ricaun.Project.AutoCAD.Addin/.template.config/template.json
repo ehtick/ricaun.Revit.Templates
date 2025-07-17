@@ -1,17 +1,17 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "ricaun",
-  "name": "Solution Autodesk AutoCAD Addin Template",
-  "shortName": "ricaun-autocad-addin-sln",
-  "identity": "ricaun.Solution.AutoCAD.Addin.Template",
+  "name": "Project Autodesk AutoCAD Addin Template",
+  "shortName": "ricaun-autocad-addin-project",
+  "identity": "ricaun.Project.AutoCAD.Addin.Template",
   "defaultName": "AutoCADAddin",
-  "sourceName": "SolutionTemplates",
-  "description": "Solution for AutoCAD C# .NET add-in project with Build",
-  "classifications": [ "ricaun", "AutoCAD", "Solution" ],
+  "sourceName": "ProjectTemplates",
+  "description": "Template for AutoCAD C# .NET add-in project",
+  "classifications": [ "ricaun", "AutoCAD", "Library" ],
   "tags": {
     "platform": ".NET",
     "language": "C#",
-    "type": "solution"
+    "type": "project"
   },
   "guids": [
     "00000000-0000-0000-0000-000000000000",
@@ -35,12 +35,6 @@
       "replaces": "CompanyReplace",
       "datatype": "string",
       "defaultValue": "Company"
-    },
-    "License": {
-      "type": "parameter",
-      "description": "Set Project License MIT",
-      "dataType": "bool",
-      "defaultValue": "true"
     },
     "Description": {
       "type": "parameter",
@@ -101,12 +95,6 @@
       "type": "computed",
       "value": "(AutoCAD2026 == \"false\" & AutoCAD2025 == \"false\" & AutoCAD2024 == \"false\" & AutoCAD2023 == \"false\" & AutoCAD2022 == \"false\" & AutoCAD2021 == \"false\" & AutoCAD2020 == \"false\" & AutoCAD2019 == \"false\")"
     }
-    //"Integer": {
-    //  "type": "parameter",
-    //  "description": "Integer",
-    //  "dataType": "int2",
-    //  "defaultValue": "10"
-    //}
   },
   "sources": [
     {

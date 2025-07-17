@@ -1,12 +1,12 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "ricaun",
-  "name": "ricaun Nuke Template Project",
+  "name": "Project Nuke Automation Template",
   "shortName": "ricaun-nuke-project",
-  "identity": "ricaun.Nuke.Project.Template",
+  "identity": "ricaun.Project.Nuke.Template",
   "defaultName": "Build",
   "sourceName": "ricaun.Nuke.Project",
-  "description": "Build",
+  "description": "Build Nuke Automation Template",
   "classifications": [ "ricaun", "Nuke", "Library" ],
   "tags": {
     "platform": ".NET",

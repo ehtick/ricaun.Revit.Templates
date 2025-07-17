@@ -6,10 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.9.2] / 2025-07-16
 ### Features
-- Support `AutoCAD` solution.
+- Support `AutoCAD` solution and project.
 ### Updated
 - Add `ide.host.json` to support custom `icon` with `symbolInfo`.
 - Update `icon.png` to `128x128` with dark theme disable.
+- Add `ricaun.Project.AutoCAD.Addin` project template.
+- Rename templates to start with `Project` or `Solution` to reorder by name.
 
 ## [0.9.1] / 2025-04-10
 ### Updated
