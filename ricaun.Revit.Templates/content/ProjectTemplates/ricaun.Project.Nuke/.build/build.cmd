@@ -1,3 +1,3 @@
-cd .\ricaun.Nuke.Project\
+cd .\ProjectTemplates\
 call build.cmd %*
 timeout 15

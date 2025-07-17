@@ -18,8 +18,8 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Run './ricaun.Nuke.Project/build.cmd'
-        run: ./ricaun.Nuke.Project/build.cmd --root ./ricaun.Nuke.Project
+      - name: Run './ProjectTemplates/build.cmd'
+        run: ./ProjectTemplates/build.cmd --root ./ProjectTemplates
         env:
           GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           SignFile: ${{ secrets.SIGN_FILE }}

@@ -5,7 +5,7 @@
   "shortName": "ricaun-nuke-project",
   "identity": "ricaun.Project.Nuke.Template",
   "defaultName": "Build",
-  "sourceName": "ricaun.Nuke.Project",
+  "sourceName": "ProjectTemplates",
   "description": "Build Nuke Automation Template",
   "classifications": [ "ricaun", "Nuke", "Library" ],
   "tags": {
