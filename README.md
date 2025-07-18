@@ -20,7 +20,7 @@ This package is automatically installed when using the [ricaun.AppLoader](https:
 ## SolutionTemplates
 
 Solution Name | Short Name | Description
---------|-------------
+--------|-------------|-------------
 Solution Autodesk Revit Addin Template | ricaun-revit-addin-sln | Solution for Revit C# .NET add-in project with Build
 Solution Autodesk AutoCAD Addin Template | ricaun-autocad-addin-sln | Solution for AutoCAD C# .NET add-in project with Build
 
@@ -72,7 +72,7 @@ Options | Description | Default
 The `ProjectTemplates` are installed automatically in `Visual Studio 2022` when [ricaun.AppLoader](https://ricaun.com/AppLoader/) plugin installs the package.
 
 Project Name | Short Name | Description
---------|-------------
+--------|-------------|-------------
 Project Autodesk Revit Addin Template | ricaun-revit-addin-project | Template for Revit C# .NET add-in project
 Project Autodesk RevitTest Template | ricaun-revittest-project | Template for Revit C# .NET test project
 Project Autodesk AutoCAD Addin Template | ricaun-autocad-addin-project | Template for AutoCAD C# .NET add-in project
