@@ -25,3 +25,10 @@ class Build : NukeBuild, IPublishRevit
     public static int Main() => Execute<Build>(x => x.From<IPublishRevit>().Build);
 }
 #endif-->
+< !--#if (IsTypeAutoCAD)
+class Build : NukeBuild, IPublishAutoCAD
+{
+    // string IHazMainProject.MainName => "ProjectName";
+    public static int Main() => Execute<Build>(x => x.From<IPublishAutoCAD>().Build);
+}
+#endif-->

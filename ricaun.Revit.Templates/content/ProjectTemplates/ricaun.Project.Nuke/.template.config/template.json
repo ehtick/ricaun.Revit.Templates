@@ -51,6 +51,11 @@
           "choice": "revit",
           "displayName": "Revit",
           "description": "Revit description"
+        },
+        {
+          "choice": "autocad",
+          "displayName": "AutoCAD",
+          "description": "AutoCAD description"
         }
       ]
     },
@@ -65,6 +70,10 @@
     "IsTypeRevit": {
       "type": "computed",
       "value": "buildType == \"revit\""
+    },
+    "IsTypeAutoCAD": {
+      "type": "computed",
+      "value": "buildType == \"autocad\""
     }
     //"Authors": {
     //  "type": "parameter",

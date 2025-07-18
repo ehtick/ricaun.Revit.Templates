@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Rename projects to use `ProjectTemplates` as name.
 - Add `%(RecursiveDir)` in the `Copy` target to copy all files/directories recursively.
 - Add `DeleteNupkg` target to delete `nupkg` files in the output directory.
+- Update `ricaun.Project.Nuke` to support `IsTypeAutoCAD`.
 
 ## [0.9.1] / 2025-04-10
 ### Updated
