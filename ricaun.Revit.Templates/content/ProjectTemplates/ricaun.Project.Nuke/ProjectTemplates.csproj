@@ -19,6 +19,9 @@
 <!--#if (IsTypeRevit)-->
     <PackageReference Include="ricaun.Nuke.PackageBuilder" Version="*" />
 <!--#endif-->
+<!--#if (IsTypeAutoCAD)-->
+    <PackageReference Include="ricaun.Nuke.PackageBuilder" Version="*" />
+<!--#endif-->
   </ItemGroup>
 
   <ItemGroup>
