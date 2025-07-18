@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.10.0] / 2025-07-16
+### Features
+- Support `AutoCAD` solution and project.
+### Updated
+- Add `ide.host.json` to support custom `icon` with `symbolInfo`.
+- Update `icon.png` to `128x128` with dark theme disable.
+- Add `ricaun.Project.AutoCAD.Addin` project template.
+- Rename templates to start with `Project` or `Solution` to reorder by name.
+- Rename projects to use `ProjectTemplates` as name.
+- Add `%(RecursiveDir)` in the `Copy` target to copy all files/directories recursively.
+- Add `DeleteNupkg` target to delete `nupkg` files in the output directory.
+- Update `ricaun.Project.Nuke` to support `IsTypeAutoCAD`.
+
 ## [0.9.1] / 2025-04-10
 ### Updated
 - Support `Revit 2026` in `ricaun.Revit.Addin.Project`. (Fix: `template.json`)
@@ -18,7 +31,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Features
 - Support `Revit 2026` projects and solutions.
 ### Updated
-- Support `Revit 2026` in `ricaun.RevitTest.Project`.
+- Support `Revit 2026` in `
+- `.
 - Support `Revit 2026` in `ricaun.Revit.Addin.Project`.
 - Support `Revit 2026` in `ricaun.Solution.Revit.Addin.Template`.
 
@@ -130,6 +144,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Solution `ricaun-revit-addin-23-17-sln`
 
 [vNext]: ../../compare/1.0.0...HEAD
+[0.10.0]: ../../compare/0.9.1...0.10.0
 [0.9.1]: ../../compare/0.9.0...0.9.1
 [0.9.0]: ../../compare/0.8.3...0.9.0
 [0.8.3]: ../../compare/0.8.2...0.8.3

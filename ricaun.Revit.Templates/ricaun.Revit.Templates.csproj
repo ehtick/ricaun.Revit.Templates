@@ -137,4 +137,12 @@
     </None>
   </ItemGroup>
 
+  <Target Name="DeleteNupkg" BeforeTargets="BeforeBuild" Condition="$(TargetFramework) != ''">
+    <ItemGroup>
+      <DeleteItems Include="$(OutputPath)**\*.nupkg" />
+    </ItemGroup>
+    <Message Text="$(MSBuildProjectName) -&gt; [@(DeleteItems -> '%(Filename)%(Extension)', ', ')] ($(TargetFramework)) " Importance="high" />
+    <Delete Files="@(DeleteItems)" ContinueOnError="true" />
+  </Target>
+
 </Project>

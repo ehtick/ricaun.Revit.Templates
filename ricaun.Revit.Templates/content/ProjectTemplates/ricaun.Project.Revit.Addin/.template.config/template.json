@@ -1,17 +1,17 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "ricaun",
-  "name": "Solution Autodesk Revit Addin Template",
-  "shortName": "ricaun-revit-addin-sln",
-  "identity": "ricaun.Solution.Revit.Addin.Template",
+  "name": "Project Autodesk Revit Addin Template",
+  "shortName": "ricaun-revit-addin-project",
+  "identity": "ricaun.Project.Revit.Addin.Template",
   "defaultName": "RevitAddin",
-  "sourceName": "SolutionTemplates",
-  "description": "Solution for Revit C# .NET add-in project with Build",
-  "classifications": [ "ricaun", "Revit", "Solution" ],
+  "sourceName": "ProjectTemplates",
+  "description": "Template for Revit C# .NET add-in project",
+  "classifications": [ "ricaun", "Revit", "Library" ],
   "tags": {
     "platform": ".NET",
     "language": "C#",
-    "type": "solution"
+    "type": "project"
   },
   "guids": [
     "00000000-0000-0000-0000-000000000000",
@@ -36,12 +36,12 @@
       "datatype": "string",
       "defaultValue": "Company"
     },
-    "License": {
-      "type": "parameter",
-      "description": "Set Project License MIT",
-      "dataType": "bool",
-      "defaultValue": "true"
-    },
+    //"License": {
+    //  "type": "parameter",
+    //  "description": "Set Project License MIT",
+    //  "dataType": "bool",
+    //  "defaultValue": "true"
+    //},
     "Description": {
       "type": "parameter",
       "description": "Set Project Description PropertyGroup",

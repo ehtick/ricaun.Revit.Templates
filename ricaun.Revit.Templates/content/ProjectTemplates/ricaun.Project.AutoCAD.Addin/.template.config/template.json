@@ -1,17 +1,17 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "ricaun",
-  "name": "Solution Autodesk Revit Addin Template",
-  "shortName": "ricaun-revit-addin-sln",
-  "identity": "ricaun.Solution.Revit.Addin.Template",
-  "defaultName": "RevitAddin",
-  "sourceName": "SolutionTemplates",
-  "description": "Solution for Revit C# .NET add-in project with Build",
-  "classifications": [ "ricaun", "Revit", "Solution" ],
+  "name": "Project Autodesk AutoCAD Addin Template",
+  "shortName": "ricaun-autocad-addin-project",
+  "identity": "ricaun.Project.AutoCAD.Addin.Template",
+  "defaultName": "AutoCADAddin",
+  "sourceName": "ProjectTemplates",
+  "description": "Template for AutoCAD C# .NET add-in project",
+  "classifications": [ "ricaun", "AutoCAD", "Library" ],
   "tags": {
     "platform": ".NET",
     "language": "C#",
-    "type": "solution"
+    "type": "project"
   },
   "guids": [
     "00000000-0000-0000-0000-000000000000",
@@ -36,77 +36,65 @@
       "datatype": "string",
       "defaultValue": "Company"
     },
-    "License": {
-      "type": "parameter",
-      "description": "Set Project License MIT",
-      "dataType": "bool",
-      "defaultValue": "true"
-    },
     "Description": {
       "type": "parameter",
       "description": "Set Project Description PropertyGroup",
       "replaces": "DescriptionReplace",
       "datatype": "string",
-      "defaultValue": "Revit Plugin Description for $(PackageId)."
+      "defaultValue": "AutoCAD Plugin Description for $(PackageId)."
     },
-    "Revit2026": {
+    "AutoCAD2026": {
       "type": "parameter",
-      "description": "Configuration Version Revit 2026",
+      "description": "Configuration Version AutoCAD 2026",
       "dataType": "bool",
       "defaultValue": "false"
     },
-    "Revit2025": {
+    "AutoCAD2025": {
       "type": "parameter",
-      "description": "Configuration Version Revit 2025",
+      "description": "Configuration Version AutoCAD 2025",
       "dataType": "bool",
       "defaultValue": "false"
     },
-    "Revit2024": {
+    "AutoCAD2024": {
       "type": "parameter",
-      "description": "Configuration Version Revit 2024",
+      "description": "Configuration Version AutoCAD 2024",
       "dataType": "bool",
       "defaultValue": "false"
     },
-    "Revit2023": {
+    "AutoCAD2023": {
       "type": "parameter",
-      "description": "Configuration Version Revit 2023",
+      "description": "Configuration Version AutoCAD 2023",
       "dataType": "bool",
       "defaultValue": "false"
     },
-    "Revit2022": {
+    "AutoCAD2022": {
       "type": "parameter",
-      "description": "Configuration Version Revit 2022",
+      "description": "Configuration Version AutoCAD 2022",
       "dataType": "bool",
       "defaultValue": "false"
     },
-    "Revit2021": {
+    "AutoCAD2021": {
       "type": "parameter",
-      "description": "Configuration Version Revit 2021",
+      "description": "Configuration Version AutoCAD 2021",
       "dataType": "bool",
       "defaultValue": "false"
     },
-    "Revit2020": {
+    "AutoCAD2020": {
       "type": "parameter",
-      "description": "Configuration Version Revit 2020",
+      "description": "Configuration Version AutoCAD 2020",
       "dataType": "bool",
       "defaultValue": "false"
     },
-    "Revit2019": {
+    "AutoCAD2019": {
       "type": "parameter",
-      "description": "Configuration Version Revit 2019",
+      "description": "Configuration Version AutoCAD 2019",
       "dataType": "bool",
       "defaultValue": "false"
     },
-    "NoRevitVersion": {
+    "NoAutoCADVersion": {
       "type": "computed",
-      "value": "(Revit2026 == \"false\" & Revit2025 == \"false\" & Revit2024 == \"false\" & Revit2023 == \"false\" & Revit2022 == \"false\" & Revit2021 == \"false\" & Revit2020 == \"false\" & Revit2019 == \"false\")"
+      "value": "(AutoCAD2026 == \"false\" & AutoCAD2025 == \"false\" & AutoCAD2024 == \"false\" & AutoCAD2023 == \"false\" & AutoCAD2022 == \"false\" & AutoCAD2021 == \"false\" & AutoCAD2020 == \"false\" & AutoCAD2019 == \"false\")"
     }
-    //"Integer": {
-    //  "type": "parameter",
-    //  "description": "Integer",
-    //  "dataType": "int2",
-    //  "defaultValue": "10"
-    //}
   },
   "sources": [
     {
