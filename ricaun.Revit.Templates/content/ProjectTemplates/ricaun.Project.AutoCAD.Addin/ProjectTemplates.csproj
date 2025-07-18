@@ -253,7 +253,7 @@
       <BundleItems Include="$(OutputPath)**\*" />
     </ItemGroup>
 
-    <Copy SourceFiles="@(BundleItems)" SkipUnchangedFiles="false" DestinationFolder="$(BundleDestinationFolder)\$(AutoCADVersion)" ContinueOnError="true" Retries="1" />
+    <Copy SourceFiles="@(BundleItems)" SkipUnchangedFiles="false" DestinationFolder="$(BundleDestinationFolder)\$(AutoCADVersion)\%(RecursiveDir)" ContinueOnError="true" Retries="1" />
     <Copy SourceFiles="@(PackageContentsFile)" SkipUnchangedFiles="false" DestinationFolder="$(BundleDestinationFolder)" ContinueOnError="true" />
 
     <Message Text="$(MSBuildProjectName) -&gt; $(BundleDestinationFolder)\$(AutoCADVersion) -&gt; [@(BundleItems -> '%(Filename)%(Extension)', ', ')] ($(TargetFramework)) " Importance="high" />

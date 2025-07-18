@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add `ricaun.Project.AutoCAD.Addin` project template.
 - Rename templates to start with `Project` or `Solution` to reorder by name.
 - Rename projects to use `ProjectTemplates` as name.
+- Add `%(RecursiveDir)` in the `Copy` target to copy all files/directories recursively.
 
 ## [0.9.1] / 2025-04-10
 ### Updated
