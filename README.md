@@ -8,7 +8,7 @@ RevitAddin and AutoCADAddin Templates and ItemTemplates for C# Applications.
 [![Build](https://github.com/ricaun-io/ricaun.Revit.Templates/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.Revit.Templates/actions)
 [![nuget](https://img.shields.io/nuget/v/ricaun.Revit.Templates?logo=nuget&label=nuget&color=blue)](https://www.nuget.org/packages/ricaun.Revit.Templates)
 
-<img width="75%" height="75%" alt="image" src="https://github.com/user-attachments/assets/56325a99-5043-4bad-af50-2061dbd22954" />
+[![Create a new project](https://github.com/user-attachments/assets/56325a99-5043-4bad-af50-2061dbd22954)](https://github.com/ricaun-io/ricaun.Revit.Templates)
 
 ## Installation
 
