@@ -3,7 +3,7 @@ using Autodesk.Revit.DB;
 using NUnit.Framework;
 using System;
 
-namespace ricaun.RevitTest.Project
+namespace ProjectTemplates
 {
     public class RevitTests
     {
