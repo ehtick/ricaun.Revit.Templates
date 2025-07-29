@@ -1,5 +1,5 @@
 <Project>
-	<PropertyGroup>
-		<Version>0.10.2-cs</Version>
-	</PropertyGroup>
+  <PropertyGroup>
+    <Version>0.10.2-rc</Version>
+  </PropertyGroup>
 </Project>
