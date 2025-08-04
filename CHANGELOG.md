@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.10.3] / 2025-08-04
+### Updated
+- Update `Version` in the `Directory.Build.props` to `1.0.0-alpha`.
+
 ## [0.10.2] / 2025-07-29
 ### Updated
 - Update readme in `ricaun.Solution.AutoCAD.Addin.Template` Solution.
@@ -152,6 +156,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Solution `ricaun-revit-addin-23-17-sln`
 
 [vNext]: ../../compare/1.0.0...HEAD
+[0.10.3]: ../../compare/0.10.2...0.10.3
 [0.10.2]: ../../compare/0.10.1...0.10.2
 [0.10.1]: ../../compare/0.10.0...0.10.1
 [0.10.0]: ../../compare/0.9.1...0.10.0
